@@ -1,0 +1,861 @@
+.gin1 {
+    white-space: pre
+    width: 150px;
+    padding: 3px 6px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.gin1:focus {
+    border-color: rgb(110, 205, 252);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(110, 205, 252, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(110, 205, 252, .6);
+}
+
+.gin1::-moz-selection { 
+    background: rgb(150, 205, 252);;
+    color: white;
+}
+
+.gin1::selection { 
+    background: rgb(150, 205, 252);;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: "微软雅黑","Microsoft YaHei";
+}
+
+.varbox {
+    background: yellow;
+    display: none;
+}
+
+#bdata {
+    position: fixed;
+    background-color: black;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+    z-index: 10000;
+    
+    
+}
+
+#bdata .bdatan {
+    font-family: "Wingdings";
+    font-size: 150%;
+    margin: 0;
+    color: white;
+}
+
+#bdata .bdatan .zhf1 {
+    color: black;
+}
+
+#bdata .bdatan #bdap1 {
+    display: block;
+}
+
+#bdata .bdatan #bdap2 {
+    display: none;
+}
+
+#bdata .bdatan #bdap3 {
+    display: none;
+}
+
+#bdata .bdatan #bdap4 {
+    display: none;
+}
+
+#bdata .bdatan #bdap5 {
+    display: none;
+}
+
+#bdata .bdatan #bdap6 {
+    display: none;
+}
+
+#bdata .bdatan #bdap7 {
+    display: none;
+}
+
+#bdata .bdatan #bdap8 {
+    display: none;
+}
+
+#bdata .bdatan #bdap9 {
+    display: none;
+}
+
+#bdata .bdatan #bdap10 {
+    display: none;
+}
+
+.ha {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #afdfff;
+    /*z-index: 1000;*/
+}
+
+.ha .lg {
+    float: left;
+    width: 130px;
+    height: 50px;
+    margin: 5px;
+}
+
+.ha .lg2 {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.ha .en {
+    padding-top: 16.3px;
+}
+
+.ha .lb {
+    color: white;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 4px;
+    padding-top: 15.5px;
+}
+
+.ha .lb:hover {
+    background-color: #7bb1c8;
+}
+
+.ha .dy1 {
+    color: #688dbe;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 44.5px;
+    padding-top: 15.5px;
+}
+
+.ha .dy3 {
+    color: #688dbe;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 170px;
+    height: 44.5px;
+    padding-top: 15.5px;
+}
+
+.ha .dy2 {
+    color: white;
+    float: left;
+    display: inline-block;
+    width: 90px;
+    height: 44.5px;
+    padding-top: 15px;
+}
+
+.ha .dy4 {
+    color: white;
+    float: right;
+    display: inline-block;
+    width: 90px;
+    height: 44.5px;
+    padding-top: 15.5px;
+}
+
+.ha .dy2 .a1 {
+    font-size: 120%;
+}
+
+.ha .ck {
+    color: white;
+    background-color: #b9f0ff;
+}
+
+.ha .dy1:hover {
+    background-color: #7bb1c8;
+}
+
+.ha .dy3:hover {
+    background-color: #7bb1c8;
+}
+
+.ap {
+    color: white;
+    position: absolute;
+    left: 900px;
+    top: 120px;
+}
+
+/*me1*/
+.me1 {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    background-color: #d0e5ff;
+}
+
+.me1 .en {
+    padding-top: 13.8px;
+}
+
+.me1 .lb {
+    color: white;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 4px;
+    padding-top: 13px;
+}
+
+.me1 .lb:hover {
+    background-color: white;
+}
+
+.me1 .fg {
+    background-color: #5180a8;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 2px;
+    height: 50px;
+}
+
+.me1 .it {
+    color: #8fb2cd;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 36.5px;
+    padding-top: 6px;
+}
+
+.me1 .it .a1 {
+    font-size: 160%;
+}
+
+.me1 .dy1 {
+    color: white;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 36.5px;
+    padding-top: 13px;
+}
+
+.me1 .dy1-ck {
+    color: white;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    height: 34.5px;
+    padding-top: 13px;
+    border-bottom: 2px solid white;
+}
+
+.me1 .ck {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.me1 .dy1:hover {
+    background-color: white;
+    color: #d0e5ff;
+}
+
+.me1 .dy1-ck:hover {
+    background-color: white;
+    color: #d0e5ff;
+}
+
+.me1-d1 {
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+
+.me1-d1-2 {
+    display: none;
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+
+#loxa1 {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 150px;
+}
+
+#pa1 #bou {
+    position: absolute;
+    padding: 0;
+    left: 230px;
+    top: 160px;
+    width: 460px;
+    height: 350px;
+    background-color: black;
+    border: 5px groove #85bcd5;
+    border-radius: 0px;
+}
+
+#pa1 #boun {
+    position: absolute;
+    display: none;
+    padding: 0;
+    background: rgba(255,255,255,0.7);
+    left: 230px;
+    top: 125px;
+    width: 470px;
+    height: 400px;
+}
+
+#pa1 #boun .a1 {
+    position: absolute;
+    padding: 0;
+    left: 50px;
+    top: 90px;
+    color: #e4e7e9;
+    font-size: 160%;
+}
+
+#pa1 #boun .a2 {
+    position: absolute;
+    padding: 0;
+    left: 170px;
+    top: 130px;
+    color: #e4e7e9;
+    font-size: 110%;
+}
+
+#pa1 #boun2 {
+    position: absolute;
+    display: none;
+    padding: 0;
+    background: rgba(255,255,255,0.7);
+    left: 230px;
+    top: 125px;
+    width: 470px;
+    height: 400px;
+}
+
+#pa1 #boun2 .a1 {
+    position: absolute;
+    padding: 0;
+    left: 100px;
+    top: 90px;
+    color: #e4e7e9;
+    font-size: 160%;
+}
+
+#pa1 #boun2 .a2 {
+    position: absolute;
+    padding: 0;
+    left: 170px;
+    top: 130px;
+    color: #e4e7e9;
+    font-size: 110%;
+}
+
+#pa1 .bous #bousof {
+    position: absolute;
+    padding: 0;
+    color: #2c4b5e;
+    left: 21px;
+    top: 10px;
+}
+
+#pa1 .bous #bousof:hover {
+    color: #12344d;
+}
+
+#pa1 .bous #bouson {
+    display: none;
+    position: absolute;
+    padding: 0;
+    color: #d62f00;
+    left: 21px;
+    top: 10px;
+}
+
+#pa1 .bous #bouson:hover {
+    color: #b61900;
+}
+
+#pa1 .bous .t {
+    font-size: 120%;
+}
+
+#pa1 .bous {
+    position: absolute;
+    padding: 0;
+    left: 640px;
+    top: 125px;
+    width: 60px;
+    height: 40px;
+    background-color: #85bcd5;
+    border-radius: 2.5px;
+}
+
+#pa1 .bous-k1 {
+    position: absolute;
+    padding: 0;
+    left: 635px;
+    top: 155px;
+    width: 5px;
+    height: 5px;
+    background-color: #85bcd5;
+}
+
+#pa1 .bous-k2 {
+    position: absolute;
+    padding: 0;
+    left: 630px;
+    top: 150px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 2.5px;
+}
+
+#pa1 #boui {
+    margin: 0;
+    width: 460px;
+    height: 350px;
+}
+
+#pa2 {
+    display: none;
+}
+
+#pa2 .tb {
+    position: absolute;
+    padding: 0;
+    left: 70px;
+    top: 130px;
+}
+
+#pa2 .gx1 {
+    position: absolute;
+    background-color: #73b1fb;
+    top: 170px;
+    width: 100%;
+    height: 3px;
+}
+
+#pa2 .a1 {
+    position: absolute;
+    left: 25px;
+    top: 80px;
+    color: #508dcb;
+    font-size: 155%;
+}
+
+#pa2 .a2 {
+    position: absolute;
+    left: 25px;
+    top: 190px;
+    color: #508dcb;
+    font-size: 155%;
+}
+
+#pa2 .baidu {
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+#pa2 .baidu .bha {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+#pa2 .baidu .bha .lo {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 130px;
+}
+
+#pa2 .baidu .bha .ba1 {
+    position: absolute;
+    top: 30px;
+    left: 145px;
+    width: 50px;
+    font-size: 130%;
+    color: #4d6ef1;
+}
+
+#pa2 .baidu .fose {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+}
+
+#pa2 .baidu .fose .ip {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 300px;
+    height: 30px;
+    padding: 6px 11px 6px 11px;
+    border-style: solid;
+    border-color: #ccc;
+    border-right-style: none;
+    font-size: 80%;
+    color: #555;
+    outline: none;
+    border-radius: 9px 0px 0px 9px;
+}
+
+#pa2 .baidu .fose .ip:hover {
+    border-color: #e0e2e4;
+}
+
+#pa2 .baidu .fose .ip:focus {
+    border-color: #4d6ef1;
+}
+
+#pa2 .baidu .fose .seu {
+    position: absolute;
+    top: 6px;
+    left: 323.9px;
+    width: 120px;
+    height: 46px;
+    background: #4d6ef1;
+    font-size: 110%;
+    border-radius: 0px 9px 9px 0px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+#pa2 .baidu .fose .seu:hover {
+    background: #4562d8;
+}
+
+#pa2 .tb .in1 {
+    width: 120px;
+    padding: 3px 6px 3px 23px;
+    border-radius: 2px;
+    outline: none;
+}
+
+#pa2 .tb .a1 {
+    position: absolute;
+    left: 7px;
+    top: 2px;
+    color: #5fa6e5;
+    font-size: 15px;
+}
+
+/*httppage*/
+#pa2-h {
+    display: non;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#pa2-h .gx1 {
+    position: absolute;
+    background-color: #e0f8ff;
+    left: 24px;
+    top: 3px;
+    width: 1.3px;
+    height: 15px;
+    border-radius: 0.3px;
+}
+
+#pa2-h .bar1 {
+    position: absolute;
+    top: -19px;/*-19px*/
+    left: 60px;
+    width: 780px;
+    height: 22.8px;
+    transition: 0.7s;
+    border-radius: 0px 0px 3px 3px;
+    background-color: #afdfff;
+    display: non;
+    color: white;
+}
+
+#pa2-h .lobar {
+    position: fixed;
+    background-color: #009fe3;
+    border-radius: 0px 0px 0px 0px;
+    top: 0px;
+    width: 0px;
+    height: 2px;
+    
+}
+
+#pa2-h .bar1 .t1 {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    font-size: 110%;
+    color: white;
+}
+
+#pa2-h .bar1 .t1:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 .t2 {
+    position: absolute;
+    top: 1px;
+    left: 29px;
+    font-size: 110%;
+    color: white;
+}
+
+#pa2-h .bar1 .t2:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 .t2-o {
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 29px;
+    font-size: 110%;
+    color: white;
+}
+
+#pa2-h .bar1 .t2-o:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 #hpt3 {
+    position: absolute;
+    top: 2.5px;
+    left: 53px;
+    width: 300px;
+    height: 15px;
+    border-radius: 2px;
+    background: #cbecff;
+}
+
+#pa2-h .bar1 #hpt3 #hpt3sf{
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    font-size: 10px;
+}
+
+#pa2-h .bar1 #hpt3 #hpt3dv1{
+    position: absolute;
+    top: 1.5px;
+    left: 14.5px;
+    overflow-x: auto;
+    width: 283px;
+    font-size: 10px;
+}
+
+#pa2-h .bar1 #hpt3 #hpt3dv1a1{
+    
+    font-size: 10px;
+}
+
+#pa2-h .bar1 #hpt3 #hpt3inp{
+    position: absolute;
+    top: 1px;
+    left: 14px;
+    width: 283px;
+    font-size: 10px;
+    display: none;
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#pa2-h .bar1 .t4 {
+    position: absolute;
+    top: 1px;
+    left: 358px;
+    font-size: 110%;
+    color: white;
+}
+
+#pa2-h .bar1 .t4:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 .t4-o {
+    position: absolute;
+    top: 1px;
+    left: 358px;
+    font-size: 110%;
+    color: white;
+    display: none;
+}
+
+#pa2-h .bar1 .t4-o:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 .t5 {
+    position: absolute;
+    top: 1px;
+    left: 382px;
+    font-size: 110%;
+    color: white;
+}
+
+#pa2-h .bar1 .t5:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 .t5-o {
+    position: absolute;
+    top: 1px;
+    left: 379px;
+    font-size: 110%;
+    color: white;
+    display: none;
+}
+
+#pa2-h .bar1 .t5-o:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1 .t6 {
+    position: absolute;
+    top: 2px;
+    left: 406px;
+    font-size: 110%;
+    color: white;
+}
+
+#pa2-h .bar1 .t6:hover {
+    color: #f2f1f0;
+}
+
+#pa2-h .bar1:hover {
+    top: 0px;
+}
+
+#pa2-h .hp {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#pa2-h #hplod {
+    position: absolute;
+    top: 120px;
+    left: 180px;/*18%*/
+    background: none;
+}
+
+#pa2-h #hplod .lodbg {
+    width: 530px;
+    height: 12px;
+    border: solid 1px;
+    background: none;
+}
+
+#pa2-h #hplod #hplodlod {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 0px;
+    height: 10px;
+    background: #83d0ff;
+}
+
+/****/
+
+/**/
+
+.boot4 {
+    
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.boot4.progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.boot4.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #007bff;
+  transition: width 0.6s ease;
+}
+
+
+
+.boot4.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+.boot4.progress-bar-animated {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+}

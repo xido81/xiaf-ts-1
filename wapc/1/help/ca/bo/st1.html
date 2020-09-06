@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" href="../../../font1.css" type="text/css">
+        <script type="text/javascript" src="yz1.js"></script>
+        
+        <style>
+            body {
+                margin: 0;
+                background: black;
+                font-family: "微软雅黑";
+            }
+            
+            .bodyo {
+                background: #1d1b1e;
+            }
+        </style>
+    </head>
+    <body id="ba">
+        <div class="cok">
+            <input type="text" value="0" id="cok1"/>
+        </div>
+        <div id="se1"></div>
+        <div id="nd1">
+            <a  class="a1">输入验证码以启动浏览器</a>
+            <div class="d1">
+                <a id="er1"></a>
+                <a>验证码:</a><input type="text" id="yz"/><div class="canvas-bac"><iframe src="../../../lodging/an/co2.html" width="150" height="150" class="lo1" frameborder="0"></iframe></div><canvas id="canvas" width="100" height="40" onclick="dj()" ></canvas><input type="button" id="b1" onclick="sublim()" value="确定" class="bu1"/>
+            </div>
+        </div>
+        <div id="nd2">
+            <iframe src="../../../lodging/an/co3.html" width="235" height="235" frameborder="0"></iframe>
+        </div>
+        <div id="se2"></div>
+        
+        <div id="l1"></div>
+        <div id="nd3">
+            <a id="nd3xa1">Loading now, please wait.</a>
+            <a id="nd3xf"></a>
+        </div>
+    </body>
+    <script type="text/javascript">
+    var i = 0;
+               setInterval(function() {
+                  if(i < 10000) {
+                 	  i++;
+                     document.getElementById("nd3xf").innerHTML="_";
+                     setTimeout(function(){
+            document.getElementById("nd3xf").innerHTML="";
+        },300);
+                  }
+               }, 600);
+               
+    /*
+    function sleep(n){
+ 
+    var start=new Date().getTime();//定义起始时间的毫秒数
+    
+    document.getElementById("er1").innerHTML="_";
+    
+    while(true){
+        var time=new Date().getTime();//每次执行循环取得一次当前时间的毫秒数
+        if(time-start>n){//如果当前时间的毫秒数减去起始时间的毫秒数大于给定的毫秒数，即结束循环
+           break;
+        }
+    }
+    
+}
+ 
+ 
+ 
+//用这个函数测试吧
+    for(var i=0;i<3;i++){
+        document.getElementById("er1").innerHTML="";
+        sleep(3000);//每隔3000毫秒执行一次for循环
+    }
+
+
+
+    for (var i = 1;i <= 0; i++){
+			document.getElementById("er1").innerHTML="";
+			setTimeout(function(){
+            document.getElementById("er1").innerHTML="_";
+            var i = 1;
+        },900);
+		}*/
+        setTimeout(function(){
+            document.getElementById("ba").className="bodyo";
+            setTimeout(function(){
+                document.getElementById("ba").className="";
+                setTimeout(function(){
+                    document.getElementById("ba").className="bodyo";
+                    document.getElementById("nd3").style.display="block";
+                    document.getElementById("l1").style.display="block";
+                    document.getElementById("se1").style.display="block";
+                    document.getElementById("se2").style.display="block";
+                    document.getElementById("nd1").style.display="block";
+                    setTimeout(function(){
+                        var mag1 = 0;
+  var ise1 = setInterval(frame1, 10);
+  document.getElementById("nd3").style.display="none";
+  function frame1() {
+    if (mag1 >= 100) {
+      clearInterval(ise1);
+    } else {
+      mag1++; 
+      l1.style.top = mag1 + '%'; 
+    }
+  }
+  setTimeout(function(){
+                        var mag2 = 0;
+  var ise2 = setInterval(frame2, 9);
+  function frame2() {
+    if (mag2 >= 100) {
+      clearInterval(ise2);
+    } else {
+      mag2++; 
+      se2.style.top = mag2 + '%'; 
+    }
+  }
+                    },1000);
+                    },1800);
+                },900);
+            },1000);
+        },1900);
+        setTimeout(function(){
+            
+        },7300);
+        function yztrue() {
+            se2.style.top = "0%";
+            se2.style.height = "0%"; 
+            var mag3 = 0;
+  var ise3 = setInterval(frame3, 9);
+  function frame3() {
+    if (mag3 >= 100) {
+      clearInterval(ise3);
+    } else {
+      mag3++; 
+      se2.style.height = mag3 + '%'; 
+    }
+  }
+        }
+        
+    </script>
+</html>

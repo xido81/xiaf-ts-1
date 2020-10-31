@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--<title>HYZQ's Bad Time Simulator(1.4.0)</title>-->
+	<title id="title">games</title>
+	
+	<!-- Standardised web app manifest -->
+	<!--<link rel="manifest" href="appmanifest.json" />-->
+	<link rel="manifest" id="coh2" href="" />
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--<meta name="apple-mobile-web-app-status-bar-style" content="black" />-->
+	<meta name="apple-mobile-web-app-status-bar-style" id="coh3" content="" />
+	<!--<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />-->
+	<link rel="apple-touch-icon" id="coh4" sizes="" href="" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<!--<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />-->
+	<link rel="shortcut icon" id="coh5" sizes="" href="" />
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			/*touch-action: none;
+			-ms-touch-action: none;*/
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+	
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dos.css" type="text/css">
+	<link rel="stylesheet" href="font/font1.css" type="text/css">
+	<script src="dos.js"></script>
+	
+
+</head> 
+
+<div id="dosbc">
+    
+</div>
+<div id="dos">
+    <div id="dosinvar">
+        <input type="text" value="" id="dosiva1"/>
+        <input type="text" value="0" id="dosiva2"/>
+        <input type="text" value="0" id="dosivaecho"/>
+        <input type="text" value="0" id="dosivasleitmax"/>
+        <input type="text" value="0" id="dosivaslescmax"/>
+        <input type="text" value="0" id="dosivasleit"/>
+        <input type="text" value="0" id="dosivaslesc"/>
+    </div>
+    <div class="dosinlog">
+        <a>Log outputs</a>
+        <input type="text" value="log outputs" id="dosoulog1"/>
+        <input type="text" value="log outputs" id="dosoulog2"/>
+        <input type="text" value="log outputs" id="dosoulog3"/>
+    </div>
+    <div class="inp">
+        <input type="text" class="inx" id="dossoftkeybawa" maxlength="0"/>
+    </div>
+    <div style=
+    "
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    overflow-x: auto;
+    background: none;
+    /*clip: rect(0px,0%,0%,0px);
+    /*overflow-y:scroll;
+    overflow-x:hidden;*/
+    "
+    id="dostpl"
+    >
+        <div class="textbox" id="dostxb">
+            <!--<div class="text">55</div>-->
+        </div><div class="cursor" id="doscu">_</div>
+        
+    </div>
+    <div id="dospkeybo" class="dospkeyboc dospkbhover" onclick="dospkeyboop()">
+        <div onclick="dospkeybocl()" id="dospkbocl" style="display: none;">×</div>
+        <div class="bar1">
+            <div class="t1 thover" onclick="dossfkba()">
+                <span class="fa fa-keyboard-o"></span>
+            </div>
+            <div class="t2 thover" onclick="dospkbocapl()" id="dospkbob1t2">
+                <span class="fa fa-long-arrow-up" ></span>
+            </div>
+            <div style="display:none;" class="t2 ton thover" onclick="dospkbocaploff()" id="dospkbob1t2o">
+                <span class="fa fa-long-arrow-up" ></span>
+            </div>
+            <div class="t4 thover" onclick="doskey8()">
+                <span class="fa fa-long-arrow-left"></span>
+            </div>
+            <div class="t5 thover" onclick="dostxsr(' ')">
+                <span class="ts">space</span>
+            </div>
+            <div class="t4 thover" onclick="dosiss(0)">
+                <span class="">↑</span>
+            </div>
+            <div class="t4 thover" onclick="dosiss(1)">
+                <span class="">↓</span>
+            </div>
+            <div class="t4 thover" onclick="dosiss(2)">
+                <span class="">←</span>
+            </div>
+            <div class="t4 thover" onclick="dosiss(3)">
+                <span class="">→</span>
+            </div>
+            <div class="t3 thover" id="dospkbob1t3" onclick="doskey13()">
+                <span class="fa fa-level-down fa-rotate-90"></span>
+            </div>
+        </div>
+        <div id="dospkeybod" class="dospkeybod" style="display: block;">
+            <div class="s1 shover" onclick="dostxsr('q')">
+                <a>q</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('w')">
+                <a>w</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('e')">
+                <a>e</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('r')">
+                <a>r</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('t')">
+                <a>t</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('y')">
+                <a>y</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('u')">
+                <a>u</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('i')">
+                <a>i</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('o')">
+                <a>o</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('p')">
+                <a>p</a>
+            </div>
+            <br>
+            <div class="s1 ml5 sop shover" onclick="dostxsr('a')">
+                <a>a</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('s')">
+                <a>s</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('d')">
+                <a>d</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('f')">
+                <a>f</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('g')">
+                <a>g</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('h')">
+                <a>h</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('j')">
+                <a>j</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('k')">
+                <a>k</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('l')">
+                <a>l</a>
+            </div>
+            <br>
+            <div class="s1 ml10 sop shover" onclick="dostxsr('z')">
+                <a>z</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('x')">
+                <a>x</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('c')">
+                <a>c</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('v')">
+                <a>v</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('b')">
+                <a>b</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('n')">
+                <a>n</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('m')">
+                <a>m</a>
+            </div>
+            <br><br><br>
+            <div class="s1 sop2 shover" onclick="dostxsr('1')">
+                <a>1</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('2')">
+                <a>2</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('3')">
+                <a>3</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('4')">
+                <a>4</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('5')">
+                <a>5</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('6')">
+                <a>6</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('7')">
+                <a>7</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('8')">
+                <a>8</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('9')">
+                <a>9</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('0')">
+                <a>0</a>
+            </div>
+            <br>
+            <div class="s1 sop shover" onclick="dostxsr('/')">
+                <a>/</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('-')">
+                <a>-</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('=')">
+                <a>=</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr(';')">
+                <a>;</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('`')">
+                <a>`</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr(',')">
+                <a>,</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('.')">
+                <a>.</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('[')">
+                <a>[</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr(']')">
+                <a>]</a>
+            </div>
+        </div>
+        <div id="dospkeybodcap" class="dospkeybod" style="display: none;">
+            <div class="s1 shover" onclick="dostxsr('Q')">
+                <a>Q</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('W')">
+                <a>W</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('E')">
+                <a>E</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('R')">
+                <a>R</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('T')">
+                <a>T</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('Y')">
+                <a>Y</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('U')">
+                <a>U</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('I')">
+                <a>I</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('O')">
+                <a>O</a>
+            </div>
+            <div class="s2 shover" onclick="dostxsr('P')">
+                <a>P</a>
+            </div>
+            <br>
+            <div class="s1 ml5 sop shover" onclick="dostxsr('A')">
+                <a>A</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('S')">
+                <a>S</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('D')">
+                <a>D</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('F')">
+                <a>F</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('G')">
+                <a>G</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('H')">
+                <a>H</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('J')">
+                <a>J</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('K')">
+                <a>K</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('L')">
+                <a>L</a>
+            </div>
+            <br>
+            <div class="s1 ml10 sop shover" onclick="dostxsr('Z')">
+                <a>Z</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('X')">
+                <a>X</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('C')">
+                <a>C</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('V')">
+                <a>V</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('N')">
+                <a>B</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('N')">
+                <a>N</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('M')">
+                <a>M</a>
+            </div>
+            <br><br><br>
+            <div class="s1 sop2 shover" onclick="dostxsr('!')">
+                <a>!</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('@')">
+                <a>@</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('#')">
+                <a>#</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('$')">
+                <a>$</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('%')">
+                <a>%</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('^')">
+                <a>^</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('&')">
+                <a>&</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('*')">
+                <a>*</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr('(')">
+                <a>(</a>
+            </div>
+            <div class="s2 sop2 shover" onclick="dostxsr(')')">
+                <a>)</a>
+            </div>
+            <br>
+            <div class="s1 sop shover" onclick="dostxsr('?')">
+                <a>?</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('_')">
+                <a>_</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('+')">
+                <a>+</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr(':')">
+                <a>:</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('~')">
+                <a>~</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('<')">
+                <a><</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('>')">
+                <a>></a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('{')">
+                <a>{</a>
+            </div>
+            <div class="s2 sop shover" onclick="dostxsr('}')">
+                <a>}</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!--dosscript-->
+<div id="dosdsrc">
+    
+</div>
+
+
+<script>
+    document.getElementById("coh4").setAttribute("sizes","0x0");
+    document.getElementById("coh4").setAttribute("href","none");
+    document.getElementById("coh5").setAttribute("sizes","0x0");
+    document.getElementById("coh5").setAttribute("href","none");
+</script>
+<script>
+    var i = 0;
+    setInterval(function() {
+        if(i < 100000000000000000000000) {
+            i++;
+            var vsetin = document.getElementById("dostxin").innerHTML;
+            var tt1 = "GASTER";
+            var tt2 = "2065";
+            if ( vsetin == tt1 ) {
+                document.getElementById("dostxin").setAttribute("id","");
+                $("#dostxb").append("<br><div class='text'>WOW!You found the eggs!</div>");
+                setTimeout(function(){
+                    window.history.go(0);
+                },150);
+            }
+            else if ( vsetin == tt2 ) {
+                document.getElementById("dostxin").setAttribute("id","");
+                $("#dostxb").append("<br><div class='text' style='color:red'>ERROR</div>");
+                setTimeout(function(){
+                    window.history.go(-1);
+                },30000);
+                fc();
+                fc2();
+                /*setTimeout(function(){
+                    document.getElementById("dos").style.background="#1d1b1e";
+                    setTimeout(function(){
+                    document.getElementById("dos").style.background="red";
+                    setTimeout(function(){
+                    document.getElementById("dos").style.background="#1d1b1e";
+                    
+                },100);
+                },100);
+                },100);*/
+            }
+        }
+    }, 30);
+    function fc() {
+        setTimeout(function(){
+            document.getElementById("dos").style.background="#1d1b1e";
+            setTimeout(function(){
+            document.getElementById("dos").style.background="red";
+            fc();
+        },60);
+        },60);
+    }
+    function fc2() {
+        setTimeout(function(){
+            $("#dostxb").append("<br><div class='text' style='color:red'>ERROR</div>");
+            dospld();
+            fc2();
+        },6);
+    }
+</script>
+<script>
+    var i = 0;
+    setInterval(function() {
+        if(i < 100000000000000000000000) {
+            i++;
+            document.getElementById("doscu").style.display="inline";
+            //alert("5");
+            setTimeout(function(){
+                document.getElementById("doscu").style.display="none";
+            },200);
+        }
+    }, 400);
+</script>
+<script>
+    var i = 0;
+    setInterval(function() {
+        if(i < 100000000000000000000000) {
+            i++;
+            document.getElementById("doscuv").style.display="none";
+        }
+    },60);
+</script>
+<script>
+    setTimeout(function(){
+        document.getElementById("dos").style.display="block";
+        document.getElementById("title").innerHTML="PG-DOS";
+    },900);
+</script>
+<script>
+    setTimeout(function(){
+        if (window.location.protocol.substr(0, 4) === "file:LED")
+        {
+            $("#dostxb").append("<div class='text'>Waring: When running on the file:/// protocol, browsers block many features from working for security reasons.</div><br><div class='text'>></div><div class='text' id='dostxin'></div>");  
+            //document.getElementById("dostxb").innerHTNL+="<div>52</div>";
+		}
+		else {
+		    $("#dostxb").append("<div class='text'>></div><div class='text' id='dostxin'></div>");
+		}
+    },2600);
+</script>
+<script>
+var wi = document.getElementById("dos");
+var wi2 = document.getElementById("dostxb");
+window.onclick = function(event) {
+    if (event.target == wi) {
+        document.getElementById("dossoftkeybawa").focus();
+    }
+    else if (event.target == wi2) {
+        document.getElementById("dossoftkeybawa").focus();
+    }
+}
+/*$(function(){
+    $("#dos").click(function(){  
+        alert("5");
+    });
+});*/
+</script>
+<script>
+    /*$(document).keydown(function(event){
+　　　　if(event.keyCode == 13){
+　　　　　　alert('你按下了Enter'); 
+　　　　}
+　　})*/
+　　var input = document.getElementById("dossoftkeybawa");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        doskey13();
+        //alert("3");
+    }
+    else if (event.keyCode === 46) {
+        
+    }
+});
+</script>
+<script>
+    setTimeout(function(){
+        $("#dostxb").append("<div class='text'>Xiacloud&nbsp;PG-DOS&nbsp;1.0</div><br><div class='text'>=========================================</div><br>");
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            dospkeyboop();
+        }
+    },1800);
+</script>
+<script>
+    var i = 0;
+    setInterval(function() {
+        if(i < 100000000000000000000000) {
+            i++;
+            var dosvitm = $(".seleit").length;
+            $(".sele").removeClass("selefou");
+            var dosvscm = $(".selesc").length;
+            var dosvit = document.getElementById("dosivasleit").value;
+            var dosvsc = document.getElementById("dosivaslesc").value;
+            document.getElementById("dosivasleitmax").value= dosvitm;
+            document.getElementById("dosivaslescmax").value= dosvscm;
+            if ( dosvit > dosvitm ) {
+                document.getElementById("dosivasleit").value -- ;
+            }
+            else if ( dosvsc > dosvscm ) {
+                document.getElementById("dosivaslesc").value -- ;
+            }
+            else if ( dosvit < 0 ) {
+                document.getElementById("dosivasleit").value ++ ;
+            }
+            else if ( dosvsc < 0 ) {
+                document.getElementById("dosivaslesc").value ++ ;
+            }
+            
+            if ( dosvitm > 0 ) {
+                if ( dosvit < 1 ) {
+                    document.getElementById("dosivasleit").value ++ ;
+                }
+            }
+            
+            if ( dosvscm > 0 ) {
+                if ( dosvsc < 1 ) {
+                    document.getElementById("dosivaslesc").value ++ ;
+                }
+            }
+            
+            /*判断变量做出选择模块*/
+            
+            var dosvvit = "doslit" + dosvit;
+            var dosvvsc = "doslsc" + dosvsc;
+            document.getElementById("dosoulog1").value= "select item id:" + dosvvit;
+            document.getElementById("dosoulog2").value= "select screen id:" + dosvvsc;
+            $(".sele").removeClass("selefou");
+            //$(".sele").removeClass("seleit");
+            $(".seleit#" + dosvvit).addClass("selefou");
+            $("#" + dosvvsc).addClass("selefou");
+            
+            var dosvvscpg = "doslscp" + dosvsc;
+            var dosvvscpg2 = "#doslscp" + dosvsc;
+            document.getElementById("dosoulog3").value= "select screenpage id:" + dosvvscpg;
+            $(".selescp").hide();
+            $("#" + dosvvscpg).show();
+            $(".sele").removeClass("seleit");
+            $("#" + dosvvscpg + " .sele").addClass("seleit");
+            
+            //document.getElementsByClassName("sele").setAttribute("class","");
+            //document.getAttribute("dossele").setAttribute("class","");
+            
+        }
+    }, 20);
+</script>
+<!---->
+
+<body>
+    <a></a>
+	<div id="fb-root"></div>
+	
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		/*if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}*/
+	})();
+	</script>
+	
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+	
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="640" height="480">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. --><!--
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a></h1>
+		</canvas>
+		
+	</div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-3.5.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<!--<script src="c2runtime.js"></script>-->
+	<script id="cos1" src=""></script>
+
+    <!--<script>
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{			
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		function OnRegisterSWError(e)
+		{
+			console.warn("Failed to register service worker: ", e);
+		};
+		
+		// Runtime calls this global method when ready to start caching (i.e. after startup).
+		// This registers the service worker which caches resources for offline support.
+		window.C2_RegisterSW = function C2_RegisterSW()
+		{
+			if (!navigator.serviceWorker)
+				return;		// no SW support, ignore call
+			
+			try {
+				navigator.serviceWorker.register("sw.js", { scope: "./" })
+				.then(function (reg)
+				{
+					console.log("Registered service worker on " + reg.scope);
+				})
+				.catch(OnRegisterSWError);
+			}
+			catch (e)
+			{
+				OnRegisterSWError(e);
+			}
+		};
+    </script>-->
+    <script id="cos2">
+        
+    </script>
+</body> 
+</html> <SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

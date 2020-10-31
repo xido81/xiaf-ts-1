@@ -1,0 +1,404 @@
+#dos {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*top: 0;
+    bottom: 0;
+    /*overflow-y:scroll;
+    overflow-x:hidden;*/
+    font-family: "Minecraft";
+    padding: 3px;
+    color: #eaeaea;
+    background: #1d1b1e;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+    display: none;
+    z-index: 100001;
+}
+
+#dosbc {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: "Minecraft";
+    color: #eaeaea;
+    background: black;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+    display: none;
+    z-index: 100000;
+}
+
+#dos::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos #dosinvar {
+    background: yellow;
+    display: none;
+}
+
+#dos .dosinlog {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    right: 0;
+    overflow-x: auto;
+    background: #ccc;
+    display: none;
+    font-family: "Microsoft YaHei";
+    color: black;
+    z-index: 10;
+}
+
+#dos .inp {
+    position: fixed;
+    display: block;
+}
+
+#dos .inp .inx {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#dos .ta {
+    
+}
+
+#dos .textbox {
+    background: none;
+    display: inline;
+}
+
+#dos .textbox .text {
+    /*white-space: pre;*/
+    background: none;
+    display: inline;
+}
+
+#dos .textbox .text::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .textbox .text::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .textbox .textab {
+    /*white-space: pre;*/
+    position: absolute;
+    background: none;
+    display: block;
+}
+
+#dos .textbox .textab::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .textbox .textab::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .textbox .progressab {
+    position: absolute;
+    background: rgb(120,120,120);/*200*/
+    /*border-radius: 3px;*/
+    overflow: hidden;
+    display: flex;
+}
+
+#dos .textbox .progressab .bar {
+    background: rgb(210,210,210);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+#dos .sele {
+    background: none;
+    display: inline;
+}
+
+#dos .selefou {
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .seleit {
+    
+}
+
+#dos .selesc {
+    
+}
+
+#dos .selescp {
+    
+}
+
+#dos .sele::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .sele::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .selefou::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .selefou::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .cursor {
+    /*border-left: 1px solid black;
+    border-right: none;
+    width: 6%;*/
+    /*position: absolute;
+    width: 15px;
+    height: 12px;
+    border-bottom: 3px solid white;*/
+    /*border-left: 3px solid white;
+    /*width: 5px;
+    height: 2px;*
+    background: none;
+    /*background: #eaeaea;*/
+    display: inline;
+    /*float: bottom;*/
+}
+
+#dos .cursords {
+    visibility: visible;
+}
+
+#dos .cursor::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos .cursor::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+
+
+#dos .dospkeyboc {
+    position: absolute;
+    font-family: "Microsoft YaHei";
+    color: white;
+    top: 120px;
+    left: 80px;
+    width: 300px;
+    height: 180px;
+    transition: 0.2s;
+    border-radius: 6px;
+    border: solid 4px rgba(135,135,135,0.7);
+    background: rgba(95,95,95,0.7);
+}
+
+#dos .dospkbhover {
+    color: white;
+    left: -290px;
+    transition: 0.1s;
+}
+
+#dos .dospkbhover:hover {
+    left: -280px;
+}
+
+#dos #dospkeybo .bar1 {
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    background: none;
+}
+
+#dos #dospkeybo .bar1 .t1 {
+    border-radius: 3px 0px 0px 3px;
+    font-size: 9px;
+    background: rgba(110,110,110,0.6);
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+#dos #dospkeybo .bar1 .t2 {
+    border-radius: 0px 0px 0px 0px;
+    font-size: 9px;
+    background: rgba(110,110,110,0.6);
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+#dos #dospkeybo .bar1 .t3 {
+    border-radius: 0px 3px 3px 0px;
+    font-size: 9px;
+    background: rgba(110,110,110,0.6);
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+#dos #dospkeybo .bar1 .t4 {
+    border-radius: 0px;
+    font-size: 9px;
+    background: rgba(110,110,110,0.6);
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+#dos #dospkeybo .bar1 .t5 {
+    border-radius: 0px;
+    font-size: 9px;
+    background: rgba(110,110,110,0.6);
+    padding: 2px;
+    width: 26px;
+    height: 10px;
+    float: left;
+}
+
+#dos #dospkeybo .bar1 .t5::-moz-selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos #dospkeybo .bar1 .t5::selection { 
+    background: #eaeaea;
+    color: #1d1b1e;
+}
+
+#dos #dospkeybo .bar1 .ton {
+    color: rgb(110,110,110);
+    background: rgba(255,255,255,0.6);
+}
+
+#dos #dospkeybo .bar1 .thover {
+    
+}
+
+#dos #dospkeybo .bar1 .ts {
+    
+}
+
+#dos #dospkeybo .bar1 .thover:hover {
+    color: rgb(110,110,110);
+    background: rgba(255,255,255,0.6);
+}
+
+#dos #dospkeybo .bar1 .ts::-moz-selection {
+    color: rgb(110,110,110);
+    background: rgba(255,255,255,0.6);
+}
+
+#dos #dospkeybo .bar1 .ts::selection { 
+    color: rgb(110,110,110);
+    background: rgba(255,255,255,0.6);
+}
+
+#dos #dospkeybo #dospkbocl {
+    position: absolute;
+    padding: 0;
+    top: 1px;
+    right: 6px;
+}
+
+#dos #dospkeybo .dospkeybod {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    clear: both;
+}
+
+#dos #dospkeybo .dospkeybod a {
+    
+}
+
+#dos #dospkeybo .dospkeybod a::-moz-selection { 
+    background: rgba(215,215,215,0.6);
+    color: rgb(55,55,55);
+}
+
+#dos #dospkeybo .dospkeybod a::selection { 
+    background: rgba(215,215,215,0.6);
+    color: rgb(55,55,55);
+}
+
+#dos #dospkeybo .dospkeybod .s1 {
+    padding: 5px;
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+    border-radius: 2px;
+    border: solid 2px rgba(45,45,45,0.6);
+    background: rgba(55,55,55,0.6);
+    float: left;
+}
+
+#dos #dospkeybo .dospkeybod .s2 {
+    padding: 5px;
+    margin-left: 3px;
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+    border-radius: 2px;
+    border: solid 2px rgba(45,45,45,0.6);
+    background: rgba(55,55,55,0.6);
+    float: left;
+}
+
+
+#dos #dospkeybo .dospkeybod .sop {
+    margin-top: 3px;
+}
+
+#dos #dospkeybo .dospkeybod .sop2 {
+    margin-top: 5px;
+}
+
+#dos #dospkeybo .dospkeybod .ml5 {
+    margin-left: 5px;
+}
+
+#dos #dospkeybo .dospkeybod .ml5 {
+    margin-left: 5px;
+}
+
+#dos #dospkeybo .dospkeybod .ml10 {
+    margin-left: 10px;
+}
+
+#dos #dospkeybo .dospkeybod .shover {
+    
+}
+
+#dos #dospkeybo .dospkeybod .shover:hover {
+    border: solid 2px rgba(255,255,255,0.6);
+    background: rgba(215,215,215,0.6);
+    color: rgb(55,55,55);
+}

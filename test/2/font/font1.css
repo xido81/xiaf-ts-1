@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Lucida Console";
+    src: url("Lucida Console.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("Mojangles.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Wingdings";
+    src: url("Wingdings.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BaldisBasics";
+    src: url("Balid.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Systemfont";
+    src: url("svgasys.fon") ;
+}

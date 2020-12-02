@@ -3,6 +3,7 @@
 # 其他链接
 
 <a href="https://www.baidu.com/">百度</a><br/>
+<a href="https://www.baidu.com/s?word=输入文字">百度搜索模板1</a><br/>
 <a href="https://baike.baidu.com/">百度百科</a><br/>
 <a href="https://www.bilibili.com/">bilibili</a><br/>
 <a href="https://manga.bilibili.com/">bilibili漫画</a><br/>

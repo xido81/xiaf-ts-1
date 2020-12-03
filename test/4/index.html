@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>检测1</title>
+        
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        
+<style>
+body {
+    font-family: "Microsoft YaHei";
+    margin: 0;
+}
+.rea {
+    position: absolute;
+    top: 10px;
+    left: 160px;/*30 50*/
+    width: 100%;
+    color: white;
+}
+
+.fal {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+#dowriteo {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+#dowriteo .box {
+    padding: 4px;
+    margin: 5px;
+    width: 460px;
+    background-color: #bbdfff;
+    border-radius: 3px;
+}
+
+#dowriteo .box .dsp {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #86adc8;
+}
+
+#dowriteo .box .dbox {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #c1d3e6;
+    padding: 6px;
+    border-radius: 1px;
+    background-color: #dff3ff;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+
+#dowriteo .f.box {
+    padding: 4px;
+    margin: 5px;
+    width: 460px;
+    background-color: #ff8a7e;
+    border-radius: 3px;
+}
+
+#dowriteo .f.box .dsp {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #ec7267;
+}
+
+#dowriteo .f.box .dbox {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #dca389;
+    padding: 6px;
+    border-radius: 1px;
+    background-color: #ffd6c2;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+
+.meum {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    border-radius: 0px 0px 3px 0px;
+    color: white;
+    background-color: #afdfff;
+}
+
+.meum .t1 {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    font-size: 30px;
+}
+
+.meum .t2 {
+    position: absolute;
+    top: 7px;
+    left: 90px;
+    font-size: 30px;
+}
+
+.meum .hov:hover {
+    color: rgb(245,245,245);
+}
+</style>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+var racode,racode2,racode3,racode4,racode5;
+var timed,timed2,timed3,timed4,timed5;
+var ssv,ssv2,ssv3,ssv4,ssv5;
+var t = "undefined";
+
+setTimeout(function(){
+
+//1
+timed = setTimeout(function(){
+    window.clearTimeout(ssv);
+    $("#dowriteo").append("<div class='f box'><div class='dsp'>1 获取浏览器属性</div><div class='dbox'>ERR." + "TIMEOUT" + "</div></div>");
+    document.getElementById("rafalse").innerHTML ++ ;
+},10000);
+racode = navigator.userAgent;
+ssv = setTimeout(function(){
+    var c="获取浏览器属性";
+    if ( racode == undefined ) {
+        $("#dowriteo").append("<div class='f box'><div class='dsp'>1 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode + "</div></div>");
+        document.getElementById("rafalse").innerHTML ++ ;
+    }
+    else {
+        $("#dowriteo").append("<div class='box'><div class='dsp'>1 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode + "</div></div>");
+        document.getElementById("ratrue").innerHTML ++ ;
+    }
+    window.clearTimeout(timed);
+},10);
+//
+
+//2
+timed2 = setTimeout(function(){
+    window.clearTimeout(ssv2);
+    $("#dowriteo").append("<div class='f box'><div class='dsp'>2 检查浏览器是否启用Cookie</div><div class='dbox'>ERR." + "TIMEOUT" + "</div></div>");
+    document.getElementById("rafalse").innerHTML ++ ;
+},10000);
+racode2 = navigator.cookieEnabled;
+ssv2 = setTimeout(function(){
+    var c="检查浏览器是否启用Cookie";
+    var d="false";
+    if ( racode2 == undefined ) {
+        $("#dowriteo").append("<div class='f box'><div class='dsp'>2 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode2 + "</div></div>");
+        document.getElementById("rafalse").innerHTML ++ ;
+    }
+    else if ( racode2 == false ) {
+        $("#dowriteo").append("<div class='f box'><div class='dsp'>2 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode2 + "</div></div>");
+        document.getElementById("rafalse").innerHTML ++ ;
+    }
+    else {
+        $("#dowriteo").append("<div class='box'><div class='dsp'>2 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode2 + "</div></div>");
+        document.getElementById("ratrue").innerHTML ++ ;
+    }
+    window.clearTimeout(timed2);
+},10);
+//
+
+//3
+timed3 = setTimeout(function(){
+    window.clearTimeout(ssv3);
+    $("#dowriteo").append("<div class='f box'><div class='dsp'>3 检测当前访问环境</div><div class='dbox'>ERR." + "TIMEOUT" + "</div></div>");
+    document.getElementById("rafalse").innerHTML ++ ;
+},10000);
+racode3 = window.location.protocol.substr(0, 4);
+ssv3 = setTimeout(function(){
+    var c="检测当前访问环境";
+    var d="http";
+    var d2="https";
+    if ( racode3 == d ) {
+        $("#dowriteo").append("<div class='box'><div class='dsp'>3 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode3 + "</div></div>");
+        document.getElementById("ratrue").innerHTML ++ ;
+    }
+    else if ( racode3 == d2 ) {
+        $("#dowriteo").append("<div class='box'><div class='dsp'>3 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode3 + "</div></div>");
+        document.getElementById("ratrue").innerHTML ++ ;
+    }
+    else {
+        $("#dowriteo").append("<div class='f box'><div class='dsp'>3 " + c + "</div><div class='dbox'>&ensp;return&ensp;" + racode3 + "<br>期望为: http,https</div></div>");
+        document.getElementById("rafalse").innerHTML ++ ;
+    }
+    window.clearTimeout(timed3);
+},10);
+//
+
+
+/*$("#dowriteo").append("<div class='box'><div class='dsp'>1 获取设备一部分信息和浏览器版本号</div><div class='dbox'>&ensp;return&ensp;</div></div>");*/
+
+},1000);
+</script>
+<script>
+/*setTimeout(function(){
+    $("#dowriteo").append("<div class='box'><div class='dsp'>1 获取设备一部分信息和浏览器版本号</div><div class='dbox'>&ensp;return&ensp;</div></div>");
+},1000);*/
+
+</script>
+        
+    </head>
+    <body>
+        
+        <div id="dowriteo">
+            <!--
+            <div class="box">
+                <div class="dsp">54664</div>
+                <div class="dbox">558888</div>
+            </div>
+            <div class="f box">
+                <div class="dsp">546654</div>
+                <div class="dbox">558888</div>
+            </div>-->
+        </div>
+        <div class="meum">
+            <span class="fa fa-sign-in fa-rotate-180 t1 hov" onclick="history.go(-1);"></span>
+            <span class="fa fa-undo t2" onclick="history.go(0);"></span>
+        </div>
+        <div class="rea">
+            <a>成功:&ensp;</a><a id="ratrue">0</a>
+            <div class="fal"><a>失败:&ensp;</a><a id="rafalse">0</a></div>
+        </div>
+    </body>
+</html>

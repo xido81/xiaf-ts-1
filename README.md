@@ -16,4 +16,8 @@
 <a href="https://www.youku.com/">优酷</a>
 
 ***
+# 其它公告
+<a>刘斌你好自为之</a>
+
+***
 <a href="https://github.com/xido81/xiaf-ts-1/tree/master/rmd">下一档案</a>

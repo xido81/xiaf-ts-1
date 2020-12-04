@@ -1,6 +1,6 @@
 # xiaf-ts-1
 
-# 其他链接
+# 其它链接
 
 <a href="https://www.baidu.com/">百度</a><br/>
 <a href="https://www.baidu.com/s?word=输入文字">百度搜索模板1</a><br/>
@@ -17,7 +17,7 @@
 
 ***
 # 其它公告
-<a>刘斌你好自为之</a>
+<a>刘&lowast;斌你好自为之!!!</a>
 
 ***
 <a href="https://github.com/xido81/xiaf-ts-1/tree/master/rmd">下一档案</a>

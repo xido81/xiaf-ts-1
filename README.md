@@ -15,6 +15,9 @@
 <a href="https://www.iqiyi.com/">爱奇艺</a><br/>
 <a href="https://www.youku.com/">优酷</a>
 
+# 小游戏
+<a href="https://hyzq.github.io/HYZQ-BTS-V1.4.5/">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>
+
 ***
 # 其它公告
 <a>刘&lowast;斌你好自为之!!!</a>

@@ -15,7 +15,7 @@
 <a href="https://m.dingtalk.com/">钉钉-手机版</a><br/>
 <a href="https://www.iqiyi.com/">爱奇艺</a><br/>
 <a href="https://www.youku.com/">优酷</a>-->
-<a>此功能已禁用</a>
+<a>此功能正在升级</a>
 
 # 小游戏
 <a href="https://hyzq.github.io/HYZQ-BTS-V1.4.5/">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>

@@ -18,7 +18,7 @@
 <a>此功能正在升级</a>
 
 # 小游戏
-<a href="https://hyzq.github.io/HYZQ-BTS-V1.4.5/">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>
+<a href="https://hyzq.github.io/HYZQ-BTS-V1.4.5/">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))(你们先玩着)</a>
 
 ***
 # 其它公告

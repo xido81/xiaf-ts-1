@@ -23,10 +23,10 @@
 
 ***
 # 其它公告
-<!--<a>1(置顶) 震惊，五班全体竟。。。<br/><a href="https://xxq.iclass30.com/studyWalls/student_32952b340de147a098fc5c02251a1ba3/publish_5e17425ef9b5467288699674035ea3b0">点击查看热门话题</a>，神秘的五班，帅&nbsp;&nbsp;哥&nbsp;&nbsp;李&nbsp;&nbsp;子&nbsp;&nbsp;凡</a><br/>
+<a>1(置顶) 震惊，五班全体竟。。。<br/><a href="https://xxq.iclass30.com/studyWalls/student_32952b340de147a098fc5c02251a1ba3/publish_5e17425ef9b5467288699674035ea3b0">点击查看热门话题</a>，神秘的五班，帅&nbsp;&nbsp;哥&nbsp;&nbsp;李&nbsp;&nbsp;子&nbsp;&nbsp;凡</a><br/>
 <br/>
-<a>2 刘\*斌你好自为之!!!</a>-->
-<a>ERROR 2027</a>
+<a>2 刘\*斌你好自为之!!!</a>
+<a></a>
 
 ***
 <a href="https://github.com/xido81/xiaf-ts-1/tree/master/rmd">下一档案</a>

@@ -20,7 +20,7 @@
 <a></a>
 
 # 小游戏
-<a href="https://hyzq.github.io/HYZQ-BTS-V1.4.5/">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://hyzq.github.io/HYZQ-BTS-V1.4.5/&verify=1&mode=2">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>
 <a></a>
 
 ***

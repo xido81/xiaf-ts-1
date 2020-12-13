@@ -1,0 +1,120 @@
+/*toggle*/
+.xc.togglebox {
+    position: absolute;
+    background-color: none;
+    
+    display: inline-block;
+}
+.xc.togglebox .toggle-label {
+    position: relative;
+    
+    background-color: none;
+}
+.xc.togglebox .toggle {
+    z-index: -1;
+    opacity: 1;
+    display: none;
+}
+.xc.togglebox .toggle-label .togglebr{
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    
+}
+.xc.togglebox .toggle-label .toggler{
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    width: 40px;
+    height: 20px;
+    border-radius: 34px;
+    background-color: rgb(230,230,230);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-color 0.3s;
+}
+/*.xc.togglebox .toggle-label .toggle:checked + .toggler{
+    background-color: green;
+}*/
+
+.xc.togglebox .toggle-label .toggleo{
+    position: absolute;
+    top: -6px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(250,250,250,1);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-color 0.3s, left 0.3s;
+}
+
+.xc.togglebox .toggle-label .toggleds{
+    position: absolute;
+    top: -10px;
+    left: -13px;
+    width: 75px;
+    height: 40px;
+    background-color: rgba(0,0,0,.3);
+}
+
+/*default*/
+.xc.togglebox .toggle:checked + .toggle-label .toggler {
+    background-color: rgb(157,250,255);
+}
+
+.xc.togglebox .toggle:checked + .toggle-label .toggleo {
+    left: 30px;
+    background-color: rgb(107,200,255);
+}
+.xc.togglebox .toggle:hover + .toggle-label .toggler {
+    box-shadow: 0 0 0 0.2rem rgba(177, 225, 255, 0.25);
+}
+.xc.togglebox .toggle:hover + .toggle-label .toggleo {
+    box-shadow: 0 0 0 0.2rem rgba(177, 225, 255, 0.25);
+}
+.xc.togglebox .toggle:disabled + .toggle-label .toggler {
+    background-color: rgb(220,220,220);
+}
+.xc.togglebox .toggle:disabled + .toggle-label .toggleo {
+    background-color: rgb(240,240,240);
+}
+.xc.togglebox .toggle:checked:disabled + .toggle-label .toggler {
+    background-color: rgb(137,230,235);
+}
+.xc.togglebox .toggle:checked:disabled + .toggle-label .toggleo {
+    background-color: rgb(87,180,235);
+}
+.xc.togglebox .toggle:hover:disabled + .toggle-label .toggler {
+    box-shadow: 0 0 0 0;
+}
+.xc.togglebox .toggle:hover:disabled + .toggle-label .toggleo {
+    box-shadow: 0 0 0 0;
+}
+
+/*yellow*/
+.xc.togglebox[theme="yellow"] .toggle:checked + .toggle-label .toggler {
+    background-color: rgb(255,255,114);
+}
+
+.xc.togglebox[theme="yellow"] .toggle:checked + .toggle-label .toggleo {
+    left: 30px;
+    background-color: rgb(255,220,64);
+}
+.xc.togglebox[theme="yellow"] .toggle:hover + .toggle-label .toggler {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 134, 0.25);
+}
+.xc.togglebox[theme="yellow"] .toggle:hover + .toggle-label .toggleo {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 134, 0.25);
+}
+.xc.togglebox[theme="yellow"] .toggle:checked:disabled + .toggle-label .toggler {
+    background-color: rgb(235,235,94);
+}
+.xc.togglebox[theme="yellow"] .toggle:checked:disabled + .toggle-label .toggleo {
+    background-color: rgb(235,200,44);
+}
+.xc.togglebox[theme="yellow"] .toggle:hover:disabled + .toggle-label .toggler {
+    box-shadow: 0 0 0 0;
+}
+.xc.togglebox[theme="yellow"] .toggle:hover:disabled + .toggle-label .toggleo {
+    box-shadow: 0 0 0 0;
+}
+
+/*toggle end*/

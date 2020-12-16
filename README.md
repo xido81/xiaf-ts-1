@@ -17,6 +17,7 @@
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://m.dingtalk.com/">钉钉-手机版</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.geetest.com&verify=1&password=geett2">GeeTest</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/&verify=1&password=lockd">爱奇艺</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://so.iqiyi.com/so/q_输入&verify=1&password=lockd">爱奇艺搜索模板1</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.youku.com/&verify=1&password=lockd">优酷</a>
 <a></a>
 

@@ -3,7 +3,7 @@
 # 其它链接
 
 <a href="https://www.baidu.com/">百度</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.baidu.com/s?word=输入文字&verify=1&refuse=1">百度搜索模板1</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.baidu.com/s?word=输入文字&verify=1&password=baidusou1&refuse=1">百度搜索模板1</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://baike.baidu.com/">百度百科</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.bilibili.com/&mode=1&refuse=1">bilibili</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://manga.bilibili.com/&refuse=1">bilibili漫画</a><br/>

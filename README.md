@@ -16,14 +16,14 @@
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.dingtalk.com/">钉钉</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://m.dingtalk.com/">钉钉-手机版</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.geetest.com&verify=1&password=geett2">GeeTest</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/&verify=1&password=lockd">爱奇艺</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://so.iqiyi.com/so/q_输入&verify=1&password=lockd">爱奇艺搜索模板1</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/v_19rrbsskrc.html&verify=1&password=lockd">爱奇艺视频地址1</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.youku.com/&verify=1&password=lockd">优酷</a>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/&verify=1&password=lockd&refuse=1">爱奇艺</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://so.iqiyi.com/so/q_输入&verify=1&password=lockd&refuse=1">爱奇艺搜索模板1</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/v_19rrbsskrc.html&verify=1&password=lockd&refuse=1">爱奇艺视频地址1</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.youku.com/&verify=1&password=lockd&refuse=1">优酷</a>
 <a></a>
 
 # 小游戏
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://hyzq.github.io/HYZQ-BTS-V1.4.5/&verify=1&mode=2&password=lockd">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://hyzq.github.io/HYZQ-BTS-V1.4.5/&verify=1&mode=2&password=lockd&refuse=1">HYZQ-BTS-V1.4.5(HYZQ's Bad Time Simulator(sans模拟器))</a>
 <a></a>
 
 ***

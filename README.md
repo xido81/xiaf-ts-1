@@ -3,9 +3,9 @@
 # 其它链接
 
 <a href="https://www.baidu.com/">百度</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.baidu.com/s?word=输入文字&verify=1">百度搜索模板1</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.baidu.com/s?word=输入文字&verify=1&refuse=1">百度搜索模板1</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://baike.baidu.com/">百度百科</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.bilibili.com/&mode=1">bilibili</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.bilibili.com/&mode=1&refuse=1">bilibili</a><br/>
 <a href="https://manga.bilibili.com/">bilibili漫画</a><br/>
 <a href="https://game.bilibili.com/">bilibili游戏中心</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/help/ca/index.html">Xiajaf-ca帮助版</a><br/>
@@ -13,8 +13,8 @@
 <a href="https://www.aigei.com/">爱给网</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://m.4399.cn/&verify=1&password=lockd&refuse=1">4399手机游戏网</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=http://h.4399.com/wap/&verify=1&mode=2&password=lol&refuse=1">4399手机游戏网-在线玩</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.dingtalk.com/">钉钉</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://m.dingtalk.com/">钉钉-手机版</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.dingtalk.com/&refuse=1">钉钉</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://m.dingtalk.com/&refuse=1">钉钉-手机版</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.geetest.com&verify=1&password=geett2">GeeTest</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/&verify=1&password=lockd&refuse=1">爱奇艺</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://so.iqiyi.com/so/q_输入&verify=1&password=lockd&refuse=1">爱奇艺搜索模板1</a><br/>

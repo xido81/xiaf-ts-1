@@ -1,4 +1,6 @@
 # 测试页面链接
+[课堂3.0_学习墙(登录)=教师端=](https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://xxq.iclass30.com/auth/login/&mode=2)<br/>
+[课堂3.0_学习墙(已登录)=教师端=](https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://xxq.iclass30.com/dashboard/publish/&mode=2)<br/>
 [测试页面1](https://xido81.github.io/xiaf-ts-1/wapc/1/help/ca/index.html)<br/>
 [测试页面2](https://xido81.github.io/xiaf-ts-1/ckplayer/index.html)<br/>
 [测试页面3](https://xido81.github.io/xiaf-ts-1/test/2/index.html)<br/>

@@ -17,7 +17,7 @@
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://m.dingtalk.com/&refuse=0">钉钉-手机版</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.geetest.com&verify=1&password=geett2">GeeTest</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iclass30.com/?v=1.6&verify=1&password=lockd&refuse=0">课堂3.0</a><br/>
-<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://xxq.iclass30.com/auth/login?usertype=1&verify=0&password=lockd&refuse=0">课堂3.0</a><br/>
+<a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://xxq.iclass30.com/auth/login?usertype=1&verify=0&password=lockd&refuse=0">课堂3.0_学习墙(教师端)</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/&verify=1&password=lockd&refuse=0">爱奇艺</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://so.iqiyi.com/so/q_输入&verify=1&password=lockd&refuse=0">爱奇艺搜索模板1</a><br/>
 <a href="https://xido81.github.io/xiaf-ts-1/wapc/1/linksys/1/link?url=https://www.iqiyi.com/v_19rrbsskrc.html&verify=1&password=lockd&refuse=0">爱奇艺视频地址1</a><br/>

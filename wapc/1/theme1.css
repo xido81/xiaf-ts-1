@@ -1,0 +1,182 @@
+.xc {
+}
+
+.xc.thm1 {
+    color: #ccc;
+}
+.xc.thm1::selection { 
+    background: #ccc;
+    color: white;
+}
+.xc.thm1::-moz-selection { 
+    background: #ccc;
+    color: white;
+}
+
+.xc.thm2 {
+    color: #0f0;
+}
+.xc.thm2::selection { 
+    background: #0f0;
+    color: white;
+}
+.xc.thm2::-moz-selection { 
+    background: #0f0;
+    color: white;
+}
+
+.xc.thm3 {
+    color: #0ff;
+}
+.xc.thm3::selection { 
+    background: #0ff;
+    color: white;
+}
+.xc.thm3::-moz-selection { 
+    background: #0ff;
+    color: white;
+}
+
+.xc.thm4 {
+    color: #ff0;
+}
+.xc.thm4::selection { 
+    background: #ff0;
+    color: white;
+}
+.xc.thm4::-moz-selection { 
+    background: #ff0;
+    color: white;
+}
+
+.xc.thm5 {
+    color: #f00;
+}
+.xc.thm5::selection { 
+    background: #f00;
+    color: white;
+}
+.xc.thm5::-moz-selection { 
+    background: #f00;
+    color: white;
+}
+
+.xc.thm6 {
+    color: #f70;
+}
+.xc.thm6::selection { 
+    background: #f70;
+    color: white;
+}
+.xc.thm6::-moz-selection { 
+    background: #f70;
+    color: white;
+}
+
+.xc.thm7 {
+    color: #08f;
+}
+.xc.thm7::selection { 
+    background: #08f;
+    color: white;
+}
+.xc.thm7::-moz-selection { 
+    background: #08f;
+    color: white;
+}
+
+.xc.thm-t1i{
+}
+.xc.thm-t1 {
+    color: #0ff;
+    animation: xc-thm-t1-anm 4s infinite linear;
+}
+.xc.thm-t1::selection { 
+    background: #0ff;
+    color: white;
+}
+.xc.thm-t1::-moz-selection { 
+    background: #0ff;
+    color: white;
+}
+.xc.thm-t1-2 {
+    color: #ff0;
+}
+.xc.thm-t1-2::selection { 
+    background: #ff0;
+    color: white;
+    transition: 3s;
+}
+.xc.thm-t1-2::-moz-selection { 
+    background: #ff0;
+    color: white;
+}
+.xc.thm-t1.ti {
+    transition: 3s;
+}
+
+@keyframes xc-thm-t1-anm {
+    0% {
+        color: #0ff;
+    }
+    5% {
+        color: #00f;
+    }
+    10% {
+        color: #60c;
+    }
+    15% {
+        color: #f0f;
+    }
+    20% {
+        color: #f00;
+    }
+    25% {
+        color: #ff0;
+    }
+    30% {
+        color: #cbffc6;
+    }
+    35% {
+        color: #aad26f;
+    }
+    40% {
+        color: #bd9854;
+    }
+    45% {
+        color: #f285b8;
+    }
+    50% {
+        color: #ff3964;
+    }
+    55% {
+        color: #d174ba;
+    }
+    60% {
+        color: #5852ff;
+    }
+    65% {
+        color: #11a1ff;
+    }
+    70% {
+        color: #3cffb5;
+    }
+    75% {
+        color: #476e0c;
+    }
+    80% {
+        color: #007ac1;
+    }
+    85% {
+        color: #000;
+    }
+    90% {
+        color: #888;
+    }
+    95% {
+        color: #0f0;
+    }
+    100% {
+        color: #0ff;
+    }
+}

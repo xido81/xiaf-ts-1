@@ -62,7 +62,7 @@ function xcevent1() {
     }
     
     if ( vr2==vrf1 ) {
-        $(".card-box_more-operation").hide();
+        $(".el-popover__reference-wrapper").hide();
     }
     else if ( vr2==vrf2 ) {
         $("#el-popover-5297").show();

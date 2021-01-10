@@ -175,19 +175,19 @@ style="padding: 10px; left: 0px; top: 0px;">
 							</button>
 						</div>
 					</div>-->
-					<span class="el-popover__reference-wrapper">
+                                        <!--<span class="el-popover__reference-wrapper">
 						<button data-v-3280dfd4="" type="button" class="el-button el-icon-more el-button--text el-popover__reference"
 						aria-describedby="el-popover-1123" tabindex="0" style="margin-left: 65px;">
 							<!---->
 							<!---->
 							<!---->
 						</button>
-					</span>
+					</span>-->
 				</span>
 			</div>
 			<div data-v-3280dfd4="" class="dynamic-card_body">
 				<h1 data-v-3280dfd4="">
-					通知
+                                        公告
 				</h1>
 				<p data-v-3280dfd4="">
 					<a style="color: #f8ae7d">

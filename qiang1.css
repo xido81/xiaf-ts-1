@@ -1,9 +1,8 @@
 .xcbx {
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 0;
     width: auto;
-    z-index: 1000;
 }
 
 .xcbxvar {

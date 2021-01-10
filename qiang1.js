@@ -62,7 +62,7 @@ function xcevent1() {
     }
     
     if ( vr2==vrf1 ) {
-        $(".el-popover__reference-wrapper").hide();
+        $("#imgbox_fd4e29cbb26d4f45b189f59c08bc64c6 .el-popover__reference-wrapper").hide();
     }
     else if ( vr2==vrf2 ) {
         $("#el-popover-5297").show();

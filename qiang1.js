@@ -22,6 +22,9 @@ function xcaut2() {
         
         xcevent1();
     },1000);
+    setTimeout(function(){
+        alert("qiang");
+    },5000);
     
 }
 

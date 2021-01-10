@@ -111,7 +111,7 @@ function xcevent1() {
 
 function xceventt1() {
     setTimeout(function(){
-    $(".vue-waterfall-easy").prepend(`
+    $(".vue-waterfall-easy").append(`
     
     
     <div data-v-28a62ccb="" id="imgbox_22dab93a999943a7ffcec540521eb268" class="img-box default-card-animation"
@@ -242,7 +242,7 @@ style="padding: 10px; left: 0px; top: 0px;">
 						<!----
 						<!----
 						<span>
-							发�1�7?
+							发送
 						</span>
 					</button>
 				</div>-->

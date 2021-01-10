@@ -62,10 +62,10 @@ function xcevent1() {
     }
     
     if ( vr2==vrf1 ) {
-        $("[aria-describedby='el-popover-5297']").hide();
+        $("#el-popover-5297").hide();
     }
     else if ( vr2==vrf2 ) {
-        $("[aria-describedby='el-popover-5297']").show();
+        $("#el-popover-5297").show();
     }
     
     setTimeout(function(){

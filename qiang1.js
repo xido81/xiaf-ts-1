@@ -70,6 +70,8 @@ function xcevent1() {
     else if ( vr2==vrf2 ) {
         $("#imgbox_fd4e29cbb26d4f45b189f59c08bc64c6 .el-popover__reference-wrapper").show();
     }
+	
+    $("a[xcsaved!='true']").hide();
     
     setTimeout(function(){
         xcevent1();

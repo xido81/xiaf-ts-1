@@ -42,6 +42,10 @@ function xcaut2g2() {
         </audio>`);
         
         
+        setTimeout(function(){
+        xcevent2();
+    },15000);
+        
     },500);
     
     }

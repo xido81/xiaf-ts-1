@@ -40,6 +40,9 @@ function xcaut2g2() {
         <audio id="dsound">
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/uac.ogg" type="audio/ogg">
         </audio>`);
+	    
+	    
+	$("html").append(`<xia-objwin id="92" type="psc" winbuttonclose-event="$('#92').remove()" buttontrue-event="$('#92').remove()" buttonfalse-event="$('#92').remove()" eventname="" initiator="" alertlevel="0" alertbackdrop="true"></xia-objwin>`);
         
         xcevent1();
         xceventt1();

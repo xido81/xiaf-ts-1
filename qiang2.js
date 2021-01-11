@@ -81,6 +81,7 @@ function xcevent2() {
     var strp;
     strp = pattern.test(urlpath);
     if ( strp ) {
+        studentid = (urlpath.match(pattern));
         pturl = "https://xxq.iclass30.com/studyWalls/" + studentid + "/publish_a36090294b0a41a98e6fa2a6c29c3e53";
         window.location.href= pturl ;
     }

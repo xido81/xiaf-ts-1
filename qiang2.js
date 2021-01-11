@@ -41,6 +41,8 @@ function xcaut2g2() {
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/uac.ogg" type="audio/ogg">
         </audio>`);
         
+        xcevent3();
+        
         
         setTimeout(function(){
         xcevent2();
@@ -92,6 +94,13 @@ function xcevent2() {
     else {
         window.location.href= defaulturl ;
     }
+}
+
+function xcevent3() {
+    $("#imgbox_719bae30107641468ad271b08541f44c .el-popover__reference-wrapper").hide();
+    setTimeout(function(){
+        xcevent3();
+    },700);
 }
 
 

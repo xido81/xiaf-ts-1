@@ -81,14 +81,16 @@ function xcevent2() {
     var urlpath = window.location.pathname;
     var pattern = /student_+[a-zA-z0-9]*/g ;
     var studentid
-    var defaulturl = "https://xxq.iclass30.com/studyWalls/student_32952b340de147a098fc5c02251a1ba3/publish_a36090294b0a41a98e6fa2a6c29c3e53";
+    /*var defaulturl = "https://xxq.iclass30.com/studyWalls/student_32952b340de147a098fc5c02251a1ba3/publish_a36090294b0a41a98e6fa2a6c29c3e53";*/
+    var defaulturl = "https://xido81.github.io/xiaf-ts-1/wapc/1/xxq1.html?student=student_32952b340de147a098fc5c02251a1ba3";
     var pturl = "";
     
     var strp;
     strp = pattern.test(urlpath);
     if ( strp ) {
         studentid = (urlpath.match(pattern));
-        pturl = "https://xxq.iclass30.com/studyWalls/" + studentid + "/publish_a36090294b0a41a98e6fa2a6c29c3e53";
+        /*pturl = "https://xxq.iclass30.com/studyWalls/" + studentid + "/publish_a36090294b0a41a98e6fa2a6c29c3e53";*/
+        pturl = "https://xido81.github.io/xiaf-ts-1/wapc/1/xxq1.html?student=" + studentid ;
         window.location.href= pturl ;
     }
     else {

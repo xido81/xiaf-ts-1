@@ -83,7 +83,7 @@ function xcaut3() {
                 
                 if ( studentid==sid1 ) {
                 alert("1222");
-                window.history.go(-2);
+                window.history.go(-100);
                 }
                 
                 }

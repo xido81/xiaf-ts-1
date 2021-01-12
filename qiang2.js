@@ -43,6 +43,8 @@ function xcaut2g2() {
         
         xcevent3();
         
+        xcaut3();
+        
         
         setTimeout(function(){
         xcevent2();
@@ -52,6 +54,46 @@ function xcaut2g2() {
     
     }
     
+}
+
+var inter1
+function xcaut3() {
+    var i = 0;
+    var urlpath = window.location.pathname ;
+    var pattern = /student_+[a-zA-z0-9]*/g ;
+    var studentid
+    var sid1 = "student_63e5281b09e54d61ab04a12fe4b8756e";
+    inter1 = setInterval(function() {
+        if(i < 100000000000000000000000) {
+            i++;
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            studentid = (urlpath.match(pattern));
+            
+            if ( h > 8 ) {
+                if ( h < 11) {
+                if ( m > 50 ) {
+                    
+                if ( studentid==sid1 ) {
+                window.history.go(-1000);
+                }
+                    
+                }
+                }
+            }
+            if ( h > 13 ) {
+                if ( h < 15 ) {
+                
+                if ( studentid==sid1 ) {
+                window.history.go(-1000);
+                }
+                
+                }
+            }
+        }
+    }, 400);
 }
 
 function xcevent1() {

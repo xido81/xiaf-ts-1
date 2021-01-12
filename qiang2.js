@@ -83,7 +83,11 @@ function xcaut3() {
                 
                 if ( studentid==sid1 ) {
                 alert("1222");
-                window.history.go(-100);
+                $("html").append(`
+                <div id="htcl" class="htcl">
+                
+                </div>`);
+                
                 }
                 
                 }
@@ -92,7 +96,11 @@ function xcaut3() {
                 if ( m < 50) {
                 alert("1223");
                 if ( studentid==sid1 ) {
-                window.history.go(-1);
+                $("html").append(`
+                <div id="htcl" class="htcl">
+                
+                </div>`);
+                }
                 }
                 
                 }
@@ -104,7 +112,11 @@ function xcaut3() {
                 if ( h < 15 ) {
                 
                 if ( studentid==sid1 ) {
-                window.history.go(-1);
+                $("html").append(`
+                <div id="htcl" class="htcl">
+                
+                </div>`);
+                }
                 }
                 
                 }

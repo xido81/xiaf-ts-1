@@ -74,15 +74,15 @@ function xcaut3() {
             var m=today.getMinutes();
             var s=today.getSeconds();
             studentid = (urlpath.match(pattern));
-            alert("1");
+            
             
             if ( h > 8 ) {
-                alert("12");
+                
                 if ( h < 11) {
-                alert("122");
+                
                 
                 if ( studentid==sid1 ) {
-                alert("1222");
+                
                 $("html").append(`
                 <div id="htcl" class="htcl">
                 
@@ -92,9 +92,9 @@ function xcaut3() {
                 
                 }
                 else if ( h < 12 ) {
-                    alert("123");
+                    
                 if ( m < 50) {
-                alert("1223");
+                
                 if ( studentid==sid1 ) {
                 $("html").append(`
                 <div id="htcl" class="htcl">
@@ -108,7 +108,7 @@ function xcaut3() {
             }
             
             if ( h > 12 ) {
-                alert("13");
+                
                 if ( h < 15 ) {
                 
                 if ( studentid==sid1 ) {

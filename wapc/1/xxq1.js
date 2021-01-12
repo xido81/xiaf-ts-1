@@ -12,6 +12,7 @@ function aut1() {
         document.getElementById("wn").setAttribute("class","win th-bottom");
         setTimeout(function(){
         starttd();
+        document.getElementById("wninp1chk").setAttribute("onclick","psw()");
     },2500);
     },8000);
     },2000);

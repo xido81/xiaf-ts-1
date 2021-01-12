@@ -62,10 +62,11 @@ function xcaut3() {
     var urlpath = window.location.pathname ;
     var pattern = /student_+[a-zA-z0-9]*/g ;
     var studentid
-    var sid1 = "student_63e5281b09e54d61ab04a12fe4b8756e";
+    
     inter1 = setInterval(function() {
         if(i < 100000000000000000000000) {
             i++;
+            var sid1 = "student_63e5281b09e54d61ab04a12fe4b8756e";
             var today=new Date();
             var h=today.getHours();
             var m=today.getMinutes();
@@ -79,13 +80,15 @@ function xcaut3() {
                 alert("122");
                 
                 if ( studentid==sid1 ) {
+                alert("1222");
                 window.history.go(-1);
                 }
                 
                 }
                 else if ( h < 12 ) {
+                    alert("123");
                 if ( m < 50) {
-                
+                alert("1223");
                 if ( studentid==sid1 ) {
                 window.history.go(-1);
                 }

@@ -59,13 +59,15 @@ function xcaut2g2() {
 var inter1
 function xcaut3() {
     var i = 0;
-    var urlpath = window.location.pathname ;
-    var pattern = /student_+[a-zA-z0-9]*/g ;
-    var studentid
+    
     
     inter1 = setInterval(function() {
         if(i < 100000000000000000000000) {
             i++;
+            var urlpath = window.location.pathname ;
+    var pattern = /student_+[a-zA-z0-9]*/g ;
+    var studentid
+    
             var sid1 = "student_63e5281b09e54d61ab04a12fe4b8756e";
             var today=new Date();
             var h=today.getHours();

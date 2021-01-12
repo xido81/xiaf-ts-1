@@ -98,6 +98,7 @@ function xcevent2() {
 
 function xcevent3() {
     $("#imgbox_719bae30107641468ad271b08541f44c .el-popover__reference-wrapper").hide();
+    $("a[href][xcsaved!='true']").hide();
     setTimeout(function(){
         xcevent3();
     },700);

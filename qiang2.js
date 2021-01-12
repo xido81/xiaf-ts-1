@@ -77,7 +77,7 @@ function xcaut3() {
                 if ( m > 50 ) {
                     
                 if ( studentid==sid1 ) {
-                window.history.go(-1000);
+                window.history.go(-1);
                 }
                     
                 }
@@ -87,7 +87,7 @@ function xcaut3() {
                 if ( h < 15 ) {
                 
                 if ( studentid==sid1 ) {
-                window.history.go(-1000);
+                window.history.go(-1);
                 }
                 
                 }

@@ -46,9 +46,9 @@ function xcaut2g2() {
         xcaut3();
         
         
-        setTimeout(function(){
+        /*setTimeout(function(){
         xcevent2();
-    },3000);
+    },3000);*/
         
     },500);
     

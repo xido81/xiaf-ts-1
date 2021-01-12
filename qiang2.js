@@ -71,19 +71,31 @@ function xcaut3() {
             var m=today.getMinutes();
             var s=today.getSeconds();
             studentid = (urlpath.match(pattern));
+            alert("1");
             
             if ( h > 8 ) {
+                alert("12");
                 if ( h < 11) {
-                if ( m > 50 ) {
-                    
+                alert("122");
+                
                 if ( studentid==sid1 ) {
                 window.history.go(-1);
                 }
-                    
+                
+                }
+                else if ( h < 12 ) {
+                if ( m < 50) {
+                
+                if ( studentid==sid1 ) {
+                window.history.go(-1);
+                }
+                
                 }
                 }
             }
-            if ( h > 13 ) {
+            
+            if ( h > 12 ) {
+                alert("13");
                 if ( h < 15 ) {
                 
                 if ( studentid==sid1 ) {

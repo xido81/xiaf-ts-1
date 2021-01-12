@@ -65,34 +65,28 @@ function xcaut3() {
         if(i < 100000000000000000000000) {
             i++;
             var urlpath = window.location.pathname ;
-    var pattern = /student_+[a-zA-z0-9]*/g ;
-    var studentid
-    
+            var pattern = /student_+[a-zA-z0-9]*/g ;
+            var studentid
             var sid1 = "student_63e5281b09e54d61ab04a12fe4b8756e";
+            
             var today=new Date();
             var h=today.getHours();
             var m=today.getMinutes();
             var s=today.getSeconds();
             studentid = (urlpath.match(pattern));
             
-            
             if ( h > 8 ) {
-                
                 if ( h < 11) {
                 
-                
                 if ( studentid==sid1 ) {
-                
                 $("html").append(`
                 <div id="htcl" class="htcl">
                 
                 </div>`);
-                
                 }
                 
                 }
                 else if ( h < 12 ) {
-                    
                 if ( m < 50) {
                 
                 if ( studentid==sid1 ) {
@@ -101,14 +95,12 @@ function xcaut3() {
                 
                 </div>`);
                 }
-                }
                 
                 }
                 }
             }
             
             if ( h > 12 ) {
-                
                 if ( h < 15 ) {
                 
                 if ( studentid==sid1 ) {
@@ -117,11 +109,10 @@ function xcaut3() {
                 
                 </div>`);
                 }
-                }
                 
                 }
             }
-        }
+                
     }, 400);
 }
 

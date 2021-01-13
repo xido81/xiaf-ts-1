@@ -18,6 +18,7 @@ function xcaut2() {
 }
 
 function xcaut2g2() {
+    alert("f");
     var vpp=document.getElementById("xctttvarv1").value;
     var vpv="1";
     

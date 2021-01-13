@@ -169,6 +169,30 @@ function xcevent3() {
     },700);
 }
 
+function xcevent4() {
+    var urlpath = window.location.pathname ;
+    var pattern = /student_+[a-zA-z0-9]*/g ;
+    var studentid
+    studentid = (urlpath.match(pattern));
+    alert(studentid);
+    setTimeout(function(){
+        alert(studentid);
+        setTimeout(function(){
+        alert(studentid);
+        setTimeout(function(){
+        alert(studentid);
+        setTimeout(function(){
+        alert(studentid);
+        setTimeout(function(){
+        alert(studentid);
+        
+    },1500);
+    },1500);
+    },1500);
+    },1500);
+    },1500);
+}
+
 
 
 function xceventt1() {

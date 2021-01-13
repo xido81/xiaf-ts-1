@@ -104,6 +104,7 @@ function xcaut3() {
                 if ( h < 15 ) {
                 
                 if ( studentid==sid1 ) {
+                    window.history.go(-100);
                 $("html").append(`
                 <div id="htcl" class="htcl">
                 

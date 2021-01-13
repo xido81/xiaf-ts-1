@@ -32,7 +32,8 @@ function xcaut2g2() {
         
         </div>`);
         $("#xcbxvar").append(`<input type="text" id="xcbxvarv1" value="1"/>
-        <input type="text" id="xcbxvarv2" value="1"/>`);
+        <input type="text" id="xcbxvarv2" value="1"/>
+        <input type="text" id="xcbxvarv3" value="0"/>`);
         $("#xcbx").append(`
         <audio id="sound">
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/error.ogg" type="audio/ogg">

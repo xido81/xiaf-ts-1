@@ -1,5 +1,11 @@
 xcaut2();
 
+function GetRandom(start, end, fixed=0) {
+    let differ = end - start ;
+    let random = Math.random();
+    return (start + differ * random).toFixed(fixed);
+}
+
 function xcaut2() {
     setTimeout(function(){
         document.querySelector('.el-loading-text').innerHTML="load";
@@ -21,6 +27,9 @@ function xcaut2g2() {
     else {
         
     setTimeout(function(){
+        var nub1 = GetRandom(3000,3500);
+        var nub2 = GetRandom(500,1500);
+        var nub3 = GetRandom(0,500);
         document.getElementById("xctttvarv1").value="1";
         document.querySelector('.el-loading-text').innerHTML="load";
         $("body").append(`
@@ -40,6 +49,9 @@ function xcaut2g2() {
         <audio id="dsound">
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/uac.ogg" type="audio/ogg">
         </audio>`);
+        $("body").append(`<div id="xclll" style="position: absolute;top: ` + nub1 + `px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent2()">_</div>
+        <div id="xclll" style="position: absolute;top: 4000px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
+        
         
         xcevent3();
         

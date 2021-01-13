@@ -30,7 +30,7 @@ function xcaut2g2() {
         var nub1 = GetRandom(3000,3500);
         var nub2 = GetRandom(500,1500);
         var nub3 = GetRandom(0,500);
-        var nub4 = GetRandom(9000,12000);
+        var nub4 = GetRandom(13000,16000);
         document.getElementById("xctttvarv1").value="1";
         document.querySelector('.el-loading-text').innerHTML="load";
         $("body").append(`
@@ -51,7 +51,7 @@ function xcaut2g2() {
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/uac.ogg" type="audio/ogg">
         </audio>`);
         $("body").append(`<div id="xclll" style="position: absolute;top: ` + nub4 + `px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent2()">_</div>
-        <div id="xclll" style="position: absolute;top: 12500px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
+        <div id="xclll" style="position: absolute;top: 16500px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
         
         
         xcevent3();

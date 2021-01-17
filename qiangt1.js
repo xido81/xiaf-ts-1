@@ -48,8 +48,8 @@ function xcctvalidg2() {
                 $(this).html("<a style='color: #ff8020;'>*该评论因违规已被隐藏*</a>");
             }
             
-            //匹配词:。.!
-            var pattern5 = /[。.!]{25,}/g ;
+            //匹配词:。.!！
+            var pattern5 = /[。.!！]{25,}/g ;
             var str5;
             str5 = pattern5.test(tt);
             if (str5) {
@@ -376,8 +376,8 @@ function xcctvalidg2() {
                 $(this).html("<a style='color: #7e3000;'>*该帖子内容因违规已被隐藏*</a>");
             }
             
-            //匹配词:。.!
-            var pattern5 = /[。.!]{25,}/g ;
+            //匹配词:。.!！
+            var pattern5 = /[。.!！]{25,}/g ;
             var str5;
             str5 = pattern5.test(tt);
             if (str5) {

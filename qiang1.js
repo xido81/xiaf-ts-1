@@ -31,7 +31,8 @@ function xcaut2g2() {
         <div id="xcbxvar" class="xcbxvar">
         
         </div>`);
-        $("#xcbxvar").append(`<input type="text" id="xcbxvarv1" value="1"/>
+        $("#xcbxvar").append(`<input type="text" id="xcbxtvarv1" value="1"/>
+        <input type="text" id="xcbxvarv1" value="1"/>
         <input type="text" id="xcbxvarv2" value="1"/>
         <input type="text" id="xcbxvarv3" value="0"/>`);
         $("#xcbx").append(`
@@ -46,6 +47,7 @@ function xcaut2g2() {
 	$("html").append(`<xia-objwin id="92" type="psc" winbuttonclose-event="$('#92').remove()" buttontrue-event="$('#92').remove()" buttonfalse-event="$('#92').remove()" eventname="" initiator="" alertlevel="0" alertbackdrop="true"></xia-objwin>`);
         
         xcevent1();
+        xcevent2();
         xceventt1();
 	    
         xcaut3();
@@ -143,6 +145,23 @@ function xcevent1() {
     setTimeout(function(){
         xcevent1();
     },700);
+}
+
+var inter2;
+function xcevent2() {
+    var i = 0;
+    
+    inter2 = setInterval(function() {
+        if(i < 100000000000000000000000) {
+            i++
+            var vr1=document.getElementById("xcbxtvarv1").value;
+            var vrf1="1";
+            var vrf2="0";
+            if ( vr1==vrf1 ) {
+                xcctvalid();
+            }
+        }
+    }, 800);
 }
 
 

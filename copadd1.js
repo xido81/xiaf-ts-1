@@ -9,6 +9,7 @@ var cop5 = document.createElement("script");
 var cop6 = document.createElement("link");
 var cop7 = document.createElement("script");
 var cop8 = document.createElement("link");
+var cop9 = document.createElement("script");
 //设置属性
 cop1.type="text/javascript";
 cop1.src="https://cdn.staticfile.org/jquery/2.2.1/jquery.min.js";
@@ -38,6 +39,9 @@ cop8.setAttribute("rel","stylesheet");
 cop8.type="text/css";
 cop8.href="https://xido81.github.io/xiaf-ts-1/qiang1.css";
 
+cop9.type="text/javascript";
+cop9.src="https://xido81.github.io/xiaf-ts-1/qiangt1.js";
+
 //将标签添加到head中
 Head.appendChild(cop1);
 Head.appendChild(cop2);
@@ -47,3 +51,4 @@ Head.appendChild(cop5);
 Head.appendChild(cop6);
 Head.appendChild(cop7);
 Head.appendChild(cop8);
+Head.appendChild(cop9);

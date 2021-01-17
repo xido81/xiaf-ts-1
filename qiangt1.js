@@ -172,7 +172,7 @@ function xcctvalidg2() {
             str15 = pattern15.test(tt);
             var pattern15g2 = /[Mm]+[\s。.]*[Dd]+/g ;
             var str15g2;
-            str18g2 = pattern15g2.test(tt);
+            str15g2 = pattern15g2.test(tt);
             if (str15) {
                 $(this).html("<a style='color: #ff8020;'>*该评论因违规已被隐藏*</a>");
             }
@@ -336,7 +336,7 @@ function xcctvalidg2() {
             str15 = pattern15.test(tt);
             var pattern15g2 = /[Mm]+[\s。.]*[Dd]+/g ;
             var str15g2;
-            str18g2 = pattern15g2.test(tt);
+            str15g2 = pattern15g2.test(tt);
             if (str15) {
                 $(this).html("<a style='color: #ebbaa0;'>*该帖子标题因违规已被隐藏*</a>");
             }
@@ -500,7 +500,7 @@ function xcctvalidg2() {
             str15 = pattern15.test(tt);
             var pattern15g2 = /[Mm]+[\s。.]*[Dd]+/g ;
             var str15g2;
-            str18g2 = pattern15g2.test(tt);
+            str15g2 = pattern15g2.test(tt);
             if (str15) {
                 $(this).html("<a style='color: #7e3000;'>*该帖子内容因违规已被隐藏*</a>");
             }

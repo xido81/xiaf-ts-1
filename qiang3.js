@@ -58,8 +58,8 @@ function xcaut2g2() {
         <audio id="dsound">
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/uac.ogg" type="audio/ogg">
         </audio>`);
-        $("#xcbx").append(`
-        <div id="xcbxtsssl" class="xcbxtsssl"></div>`);
+        /*$("#xcbx").append(`
+        <div id="xcbxtsssl" class="xcbxtsssl"></div>`);*/
         $("body").append(`<div id="xclll" style="position: absolute;top: ` + nub1 + `px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent2()">_</div>
         <div id="xclll" style="position: absolute;top: 4000px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
         
@@ -149,12 +149,12 @@ function xcevent1() {
         $(".time").show();
     }
     
-    if ( vr2==vrf1 ) {
+    /*if ( vr2==vrf1 ) {
         $("#imgbox_fd4e29cbb26d4f45b189f59c08bc64c6 .el-popover__reference-wrapper").hide();
     }
     else if ( vr2==vrf2 ) {
         $("#imgbox_fd4e29cbb26d4f45b189f59c08bc64c6 .el-popover__reference-wrapper").show();
-    }
+    }*/
     setTimeout(function(){
         xcevent1();
     },700);

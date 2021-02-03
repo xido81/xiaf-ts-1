@@ -62,6 +62,7 @@ function xcaut2g2() {
         <div id="xcbxtsssl" class="xcbxtsssl"></div>`);*/
         $("body").append(`<div id="xclll" style="position: absolute;top: ` + nub1 + `px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent2()">_</div>
         <div id="xclll" style="position: absolute;top: 4000px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
+        $("body").addClass("xcfitsss");
         
         xcevent3();
         xcevent5();

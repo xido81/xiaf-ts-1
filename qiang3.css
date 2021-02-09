@@ -1,7 +1,20 @@
 .xcfitsss {
     filter: grayscale(100%);
     transform: rotate(180deg);
+    animation: anim1 5s linear;
 }
+@keyframes anim1 {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(90deg);
+  }
+  100% {
+      transform: rotate(180deg);
+  }
+}
+
 .xcbx {
     position: absolute;
     top: 0;

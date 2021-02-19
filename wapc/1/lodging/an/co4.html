@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+    <head>
+        <meta charset="utf-8">
+        <link href="../ionscr/css/ionic2.css" rel="stylesheet">
+        <script src="../ionscr/js/ionic.bundle.js"></script>
+        <style>
+html {
+    background: none;
+}
+
+body {
+    margin: 0;
+}
+
+.spinner.spinner-customize {
+    stroke: #adebff;
+    fill: #adebff;
+}
+    
+.spinner svg {
+    width: 15% !important;
+    height: 15% !important;
+}
+        </style>
+        <script type="text/javascript">
+angular.module('ionicApp', ['ionic'])
+
+.controller('MyCtrl', function($scope) {
+    
+});
+        </script>
+        <script>
+window.onload = function() {
+    setcolor();
+}
+function GetQueryString(name) {
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  decodeURIComponent(r[2]); return null;
+}
+function j() {
+    document.getElementById("lod").style.stroke="#ff0";
+    document.getElementById("lod").style.fill="#ff0";
+}
+function setcolor() {
+    var urlcolor = GetQueryString("color");
+    var thm1 = "default";
+    var thm2 = "blue";
+    var thm3 = "black";
+    var thm4 = "white";
+    var thm5 = "green";
+    var thm6 = "yellow";
+    var ifp;
+    var ifp2;
+    var pattern = /[^#]{0}[#]{1}[^#\sg-zG-Z]{6}/g ;
+    var pattern2 = /[^#]{0}[#]{1}[^#\sg-zG-Z]{3}/g ;
+    /*ifp = (urlcolor.match(pattern));*/
+    try {
+    ifp = pattern.test(urlcolor);
+    ifp2 = pattern2.test(urlcolor);
+    }
+    catch {
+        
+    }
+    
+    if(urlcolor == null) {
+        
+    }
+    else if(urlcolor == thm1) {
+        
+    }
+    else if(urlcolor == thm2) {
+        document.getElementById("lod").style.stroke="#00f";
+        document.getElementById("lod").style.fill="#00f";
+    }
+    else if(urlcolor == thm3) {
+        document.getElementById("lod").style.stroke="#000";
+        document.getElementById("lod").style.fill="#000";
+    }
+    else if(urlcolor == thm4) {
+        document.getElementById("lod").style.stroke="#fff";
+        document.getElementById("lod").style.fill="#fff";
+    }
+    else if(urlcolor == thm5) {
+        document.getElementById("lod").style.stroke="#0f0";
+        document.getElementById("lod").style.fill="#0f0";
+    }
+    else if(urlcolor == thm6) {
+        document.getElementById("lod").style.stroke="#ff0";
+        document.getElementById("lod").style.fill="#ff0";
+    }
+    else if (ifp) {
+        var ucl = (urlcolor.match(pattern));
+        document.getElementById("lod").style.stroke= ucl ;
+        document.getElementById("lod").style.fill= ucl ;
+    }
+    else if (ifp2) {
+        var ucl = (urlcolor.match(pattern2));
+        document.getElementById("lod").style.stroke= ucl ;
+        document.getElementById("lod").style.fill= ucl ;
+    }
+}
+        </script>
+    </head>
+    <body ng-controller="MyCtrl">
+        <ion-spinner icon="android" class="spinner-customize" id="lod"></ion-spinner>
+    </body>
+</html>

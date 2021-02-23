@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Carrois Gothic Regular";
+    src: url("CarroisGothicSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Clockopia";
+    src: url("Clockopia.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("NanumGothic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Undertale Determination";
+    src: url("UT_Determination.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Undertale MonsterFriend";
+    src: url("UT_MonsterFriend.otf") format("opentype");
+}
+
+@font-face {
+    /*
+    this font
+    Copyright(c) Founder Corporation. 1998
+    */
+    font-family: "Founder Basepixel";
+    src: url("FounderBasepixel.ttf") format("truetype");
+}
+
+/*font1*/
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("Mojangles.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Wingdings";
+    src: url("Wingdings.ttf") format("truetype");
+}

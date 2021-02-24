@@ -62,6 +62,9 @@
                 document.getElementById('video').srcObject = mediaStream
                 document.getElementById('video').play()
             })
+            .catch ({
+               alert("2");
+            });
             // 失败就失败了
         }
         // 拍照、canvas绘制

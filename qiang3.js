@@ -63,7 +63,19 @@ function xcaut2g2() {
         $("body").append(`<div id="xclll" style="position: absolute;top: ` + nub1 + `px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent2()">_</div>
         <div id="xclll" style="position: absolute;top: 4000px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
         //$("body").addClass("xcfitsss");
-        $(".edit-mode-cover").show();
+        //$(".edit-mode-cover").show();
+        
+        setTimeout(function(){
+        $(".dynamic-add-btn-teacher").click();
+        setTimeout(function(){
+        $(".dynamic-edit-card .el-textarea__inner").val("hello");
+        setTimeout(function(){
+        $(".dynamic-edit-card .el-button--small").click();
+        
+    },3000);
+        
+    },2000);
+    },1000);
         
         xcevent3();
         xcevent5();

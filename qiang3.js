@@ -68,7 +68,10 @@ function xcaut2g2() {
         setTimeout(function(){
         $(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
-        $(".dynamic-edit-card .input-description .el-textarea__inner").val("hello");
+        var ip = $(".dynamic-edit-card .input-description .el-textarea__inner");
+        ip.focus();
+        ip.value="hello";
+        ip.blur();
         setTimeout(function(){
         //$(".dynamic-edit-card .el-button--small").click();
         

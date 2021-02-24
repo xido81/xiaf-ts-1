@@ -64,9 +64,11 @@ function xcaut2g2() {
         <div id="xclll" style="position: absolute;top: 4000px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
         //$("body").addClass("xcfitsss");
         //$(".edit-mode-cover").show();
+        $(".card-box_more-operation").show();
         
         setTimeout(function(){
-        //$(".dynamic-add-btn-teacher").click();
+        $(".dynamic-add-btn-student").click();
+        $(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
         $(".dynamic-edit-card .input-description .el-textarea__inner").focus();
         $(".dynamic-edit-card .input-description .el-textarea__inner").val("hello");

@@ -68,9 +68,9 @@ function xcaut2g2() {
         setTimeout(function(){
         $(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
-        $(".dynamic-edit-card .el-textarea__inner").val("hello");
+        $(".dynamic-edit-card .input-description .el-textarea__inner").val("hello");
         setTimeout(function(){
-        $(".dynamic-edit-card .el-button--small").click();
+        //$(".dynamic-edit-card .el-button--small").click();
         
     },3000);
         

@@ -111,6 +111,8 @@ $(".card-box_more-operation .dynamic-box_more-operation-popper-class").append(`
         $(".dynamic-edit-card .input-description .el-textarea__inner").focus();
         $(".dynamic-edit-card .input-description .el-textarea__inner").val("hello");
 	$(".dynamic-edit-card .input-description .el-textarea__inner").trigger("keydown");
+        $(".dynamic-edit-card .input-description .el-textarea__inner").trigger("keyup");
+        $(document).trigger("keydown");
         $(".dynamic-edit-card .input-description .el-textarea__inner").blur();
         setTimeout(function(){
         //$(".dynamic-edit-card .el-button--small").click();

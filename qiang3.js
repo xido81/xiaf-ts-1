@@ -70,7 +70,7 @@ function xcaut2g2() {
         
         setTimeout(function(){
         $(".dynamic-add-btn-student").click();
-        $("*").show();
+        //$("*").show();
         $(".el-loading-mask").hide();
         $(".dynamic-show-id").hide();
         $(".dynamic-mask").hide();

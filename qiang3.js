@@ -66,9 +66,10 @@ function xcaut2g2() {
         //$(".edit-mode-cover").show();
         $(".card-box_more-operation").show();
         //$(".card-box_more-operation .dynamic-box_more-operation-popper-class").show();
-        //$(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").show();
+        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").show();
+	$(".card-box_more-operation .dynamic-box_more-operation-popper-class .open-content").show();
         
-        $(".card-box_more-operation .dynamic-box_more-operation-popper-class").html("");
+        /*$(".card-box_more-operation .dynamic-box_more-operation-popper-class").html("");
 $(".card-box_more-operation .dynamic-box_more-operation-popper-class").append(`
 <div data-v-3280dfd4="" class="del-content" style="display: block;">
 	<button data-v-3280dfd4="" type="button" class="el-button el-button--text">
@@ -97,7 +98,7 @@ $(".card-box_more-operation .dynamic-box_more-operation-popper-class").append(`
 		</span>
 	</button>
 </div>
-`);
+`);*/
         
         setTimeout(function(){
         $(".dynamic-add-btn-student").click();

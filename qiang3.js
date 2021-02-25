@@ -72,6 +72,8 @@ function xcaut2g2() {
         $(".dynamic-add-btn-student").click();
         $("*").show();
         $(".el-loading-mask").hide();
+        $(".dynamic-show-id").hide();
+        $(".dynamic-mask").hide();
         //$(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
         $(".dynamic-edit-card .input-description .el-textarea__inner").focus();

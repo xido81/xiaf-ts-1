@@ -66,11 +66,12 @@ function xcaut2g2() {
         //$(".edit-mode-cover").show();
         $(".card-box_more-operation").show();
         $(".card-box_more-operation .dynamic-box_more-operation-popper-class").show();
-        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").show();
+        //$(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").show();
         
         setTimeout(function(){
         $(".dynamic-add-btn-student").click();
         $("*").show();
+        $(".el-loading-mask").hide();
         //$(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
         $(".dynamic-edit-card .input-description .el-textarea__inner").focus();

@@ -101,15 +101,16 @@ $(".card-box_more-operation .dynamic-box_more-operation-popper-class").append(`
 `);*/
         
         setTimeout(function(){
-        $(".dynamic-add-btn-student").click();
+        //$(".dynamic-add-btn-student").click();
         //$("*").show();
         $(".el-loading-mask").hide();
         $(".dynamic-show-id").hide();
         $(".dynamic-mask").hide();
-        //$(".dynamic-add-btn-teacher").click();
+        $(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
         $(".dynamic-edit-card .input-description .el-textarea__inner").focus();
         $(".dynamic-edit-card .input-description .el-textarea__inner").val("hello");
+	$(".dynamic-edit-card .input-description .el-textarea__inner").trigger("keydown");
         $(".dynamic-edit-card .input-description .el-textarea__inner").blur();
         setTimeout(function(){
         //$(".dynamic-edit-card .el-button--small").click();

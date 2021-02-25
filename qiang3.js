@@ -65,16 +65,19 @@ function xcaut2g2() {
         //$("body").addClass("xcfitsss");
         //$(".edit-mode-cover").show();
         $(".card-box_more-operation").show();
+        $(".card-box_more-operation .dynamic-box_more-operation-popper-class").show();
+        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").show();
         
         setTimeout(function(){
         $(".dynamic-add-btn-student").click();
-        $(".dynamic-add-btn-teacher").click();
+        $("*").show();
+        //$(".dynamic-add-btn-teacher").click();
         setTimeout(function(){
         $(".dynamic-edit-card .input-description .el-textarea__inner").focus();
         $(".dynamic-edit-card .input-description .el-textarea__inner").val("hello");
         $(".dynamic-edit-card .input-description .el-textarea__inner").blur();
         setTimeout(function(){
-        $(".dynamic-edit-card .el-button--small").click();
+        //$(".dynamic-edit-card .el-button--small").click();
         
     },3000);
         

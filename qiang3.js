@@ -65,8 +65,39 @@ function xcaut2g2() {
         //$("body").addClass("xcfitsss");
         //$(".edit-mode-cover").show();
         $(".card-box_more-operation").show();
-        $(".card-box_more-operation .dynamic-box_more-operation-popper-class").show();
+        //$(".card-box_more-operation .dynamic-box_more-operation-popper-class").show();
         //$(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").show();
+        
+        $(".card-box_more-operation .dynamic-box_more-operation-popper-class").html("");
+$(".card-box_more-operation .dynamic-box_more-operation-popper-class").append(`
+<div data-v-3280dfd4="" class="del-content" style="display: block;">
+	<button data-v-3280dfd4="" type="button" class="el-button el-button--text">
+	    <!---->
+		<!---->
+		<span>
+			删除
+		</span>
+	</button>
+</div>
+<div data-v-3280dfd4="" class="open-content" style="display: block;">
+	<button data-v-3280dfd4="" type="button" class="el-button el-button--text"
+	style="margin-left: 19px;">
+		<!---->
+		<!---->
+		<span>
+			置顶
+		</span>
+	</button>
+	<button data-v-3280dfd4="" type="button" class="el-button el-button--text"
+	style="margin-left: 6px; ">
+		<!---->
+		<!---->
+		<span>
+			取消置顶
+		</span>
+	</button>
+</div>
+`);
         
         setTimeout(function(){
         $(".dynamic-add-btn-student").click();

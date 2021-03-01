@@ -4,9 +4,9 @@ var xcxttv;
 function xcctvalid() {
     xcctvalidg2();
     xcctxv = setTimeout(function(){
-        $(".content").click();
-        $(".dynamic-card_body h1").click();
-        $(".dynamic-card_body p").click();
+        $(".content").trigger("onclick");
+        $(".dynamic-card_body h1").trigger("onclick");
+        $(".dynamic-card_body p").trigger("onclick");
         setTimeout(function(){
             $(".content").off("click");
             $(".content h1").off("click");

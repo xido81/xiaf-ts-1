@@ -65,7 +65,7 @@ function xcaut2g2() {
         //$("body").addClass("xcfitsss");
         
         //$(".card-box_more-operation").show();
-        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content").parents(".card-box_more-operation").show();
+        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style!='display: none']").parents(".card-box_more-operation").show();
         
         //xcevent3();
         xcevent5();

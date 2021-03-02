@@ -64,7 +64,7 @@ function xcaut2g2() {
         <div id="xclll" style="position: absolute;top: 4000px;left: 0px;color: #555;text-decoration:none;" onclick="xcevent4()">--</div>`);
         //$("body").addClass("xcfitsss");
         
-        $(".card-box_more-operation").show();
+        //$(".card-box_more-operation").show();
         
         //xcevent3();
         xcevent5();

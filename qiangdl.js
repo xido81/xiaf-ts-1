@@ -135,15 +135,15 @@ function xcaut01() {
     inter01 = setInterval(function(){
         //xcffcca();
         $(".img-box").show();
-        //$(".img-box .dynamic-card_body .xccompcd").parents(".img-box").hide();
+        $(".img-box .dynamic-card_body .xccompcd").parents(".img-box").hide();
     },500);
 }
 
 var inter02;
 function xcaut02() {
     inter02 = setInterval(function(){
-        $(".card-box_more-operation").hide();
-        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style!='display: none;']").parents(".card-box_more-operation").show();
+        $(".card-box_more-operation").show();
+        //$(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style!='display: none;']").parents(".card-box_more-operation").show();
         //$(".card-box_more-operation").show();
         //$(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style='display: none;']").parents(".card-box_more-operation").hide();
     },300);

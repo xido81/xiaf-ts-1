@@ -133,8 +133,8 @@ function xcaut3() {
 var inter01;
 function xcaut01() {
     inter01 = setInterval(function(){
-        xcffcca();
-        $(".img-box .dynamic-card_body p .xccompcd").parents(".img-box").hide();
+        //xcffcca();
+        $(".img-box .dynamic-card_body .xccompcd").parents(".img-box").hide();
     },500);
 }
 

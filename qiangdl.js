@@ -142,8 +142,8 @@ function xcaut01() {
 var inter02;
 function xcaut02() {
     inter02 = setInterval(function(){
-        //$(".card-box_more-operation").hide();
-        //$(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style!='display: none;']").parents(".card-box_more-operation").show();
+        $(".card-box_more-operation").hide();
+        $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style!='display: none;']").parents(".card-box_more-operation").show();
         $(".card-box_more-operation").show();
         $(".card-box_more-operation .dynamic-box_more-operation-popper-class .del-content[style='display: none;']").parents(".card-box_more-operation").hide();
     },300);

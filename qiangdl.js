@@ -193,7 +193,7 @@ function xcevent1() {
         $("a[href]").show();
     }
     else if( vr3==vrf2 ) {
-        $("a[xcsaved!='true']a[href]").hide();
+        $("a[href]a[xcsaved!='true']").hide();
     }
     setTimeout(function(){
         xcevent1();

@@ -50,6 +50,32 @@
     bottom: 0px;
 }
 
+.xcbxind .indnipr {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(150,100,66,1);
+}
+.xcbxind .indnipr.anm1 {
+    animation: xcindpr-anim1 0.5s linear infinite;
+}
+.xcbxind .indnipr.noopa {
+    opacity: 0;
+}
+@keyframes xcindpr-anim1 {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(90deg);
+  }
+  100% {
+      transform: rotate(180deg);
+  }
+}
+
 .xcswops {
     color: #000;
 }

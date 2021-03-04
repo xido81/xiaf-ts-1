@@ -9,8 +9,8 @@ function GetRandom(start, end, fixed=0) {
 function xcaut2() {
         
     document.getElementById("sdvci").innerHTML="1";
-    document.getElementById("xcswops").innerHTML += "<span>2</span>";
-    document.getElementById("xcswops").innerHTML += "<span>6</span>";
+    document.getElementById("xcswops").innerHTML += "<span>Main component loaded</span><br>";
+    
     setTimeout(function(){
         /*var nub1 = GetRandom(3000,3500);
         var nub2 = GetRandom(500,1500);

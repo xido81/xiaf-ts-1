@@ -54,7 +54,8 @@ function xcaut2g2() {
         $("#xcbxvar").append(`<input type="text" id="xcbxtvarv1" value="1"/>
         <input type="text" id="xcbxvarv1" value="1"/>
         <input type="text" id="xcbxvarv2" value="1"/>
-        <input type="text" id="xcbxvarv3" value="0"/>`);
+        <input type="text" id="xcbxvarv3" value="0"/>
+        <input type="text" id="xcbxvar3v3" value="0"/>`);
         $("#xcbx").append(`
         <audio id="sound">
             <source src="https://xido81.github.io/xiaf-ts-1/wapc/1/sound/error.ogg" type="audio/ogg">
@@ -171,6 +172,7 @@ function srblack() {
 function xcevent1() {
     var vr1=document.getElementById("xcbxvarv1").value;
     var vr2=document.getElementById("xcbxvarv2").value;
+    var vr3=document.getElementById("xcbxvar3v3").value;
     var vrf1="1";
     var vrf2="0";
     if ( vr1==vrf1 ) {
@@ -186,6 +188,13 @@ function xcevent1() {
     else if ( vr2==vrf2 ) {
         $("#imgbox_fd4e29cbb26d4f45b189f59c08bc64c6 .el-popover__reference-wrapper").show();
     }*/
+    
+    if( vr3==vrf1 ) {
+        $("a[href]").show();
+    }
+    else if( vr3==vrf2 ) {
+        $("a[xcsaved!='true']a[href]").hide();
+    }
     setTimeout(function(){
         xcevent1();
     },700);

@@ -10,7 +10,7 @@ function xcaut2() {
         
     document.getElementById("sdvci").innerHTML="1";
     document.getElementById("xcswops").innerHTML += "<span>Main component loaded</span><br>";
-    $(".img-box .dynamic-card_body .xccompcd").parents(".img-box").attr("xcarsys","true");
+    $(".img-box .dynamic-card_body .xccompcd").parents(".dynamic-card_body p").attr("xcarsys","true");
     
     setTimeout(function(){
         /*var nub1 = GetRandom(3000,3500);

@@ -345,7 +345,7 @@ function xcctvalidg2() {
             }
             
         });
-        $(".dynamic-card_body p").on("click",function(){
+        $(".dynamic-card_body p[xcarsys!='true']").on("click",function(){
             var tt = $(this).text();
             
             //匹配词:sb

@@ -289,10 +289,14 @@ function xcevent01g2() {
     
     var prpsh = wnh * 0.36 ;
     var prlgw = wnw + 100 ;
-    var prlgw2 = GetRandom(-100,prlgw)
+    var prlgw2 = GetRandom(-100,prlgw);
+    var prlg2w = wnw * 0.02 ;
+    prlg2w = prlg2w + 1 ;
     
     $("#xcbxind").append(`
-    <div class="indnipr anm1 xcsididpr" style="left: ` + prlgw2 + `px;transition: bottom 2s linear,opacity 0.5s;">
+    <div class="indnipr anm1 xcsididpr" style="left: ` + prlgw2 + 
+    `px;transition: bottom 2s linear,opacity 0.5s;width: ` + prlg2w + 
+    `px;height: ` + prlg2w + `px;">
     </div>`);
     
     setTimeout(function(){

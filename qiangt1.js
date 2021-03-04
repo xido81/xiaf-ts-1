@@ -6,7 +6,7 @@ function xcctvalid() {
     xcctxv = setTimeout(function(){
         $(".content").trigger("click");
         $(".dynamic-card_body h1").trigger("click");
-        $(".dynamic-card_body p").trigger("click");
+        $(".dynamic-card_body p[xcarsys!='true']").trigger("click");
         setTimeout(function(){
             $(".content").off("click");
             $(".content h1").off("click");

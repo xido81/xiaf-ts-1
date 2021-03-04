@@ -1,4 +1,5 @@
 
+document.getElementById("xcswops").innerHTML += "<span>Start lodging components...</span><br>";
 var Head = document.getElementsByTagName('head').item(0);
 //创建组件标签
 var cop1 = document.createElement("script");
@@ -53,13 +54,24 @@ cop11.src="https://xido81.github.io/xiaf-ts-1/wapc/1/script/xiwen-html2canvas/di
 
 //将标签添加到head中
 Head.appendChild(cop1);
+document.getElementById("xcswops").innerHTML += "<span>component 1 Start lodging...</span><br>";
 Head.appendChild(cop2);
+document.getElementById("xcswops").innerHTML += "<span>component 2 Start lodging...</span><br>";
 Head.appendChild(cop3);
+document.getElementById("xcswops").innerHTML += "<span>component 3 Start lodging...</span><br>";
 Head.appendChild(cop4);
+document.getElementById("xcswops").innerHTML += "<span>component 4 Start lodging...</span><br>";
 Head.appendChild(cop5);
+document.getElementById("xcswops").innerHTML += "<span>component 5 Start lodging...</span><br>";
 Head.appendChild(cop6);
+document.getElementById("xcswops").innerHTML += "<span>component 6 Start lodging...</span><br>";
 Head.appendChild(cop7);
+document.getElementById("xcswops").innerHTML += "<span>component 7 Start lodging...</span><br>";
 Head.appendChild(cop8);
+document.getElementById("xcswops").innerHTML += "<span>component 8 Start lodging...</span><br>";
 Head.appendChild(cop9);
+document.getElementById("xcswops").innerHTML += "<span>component 9 Start lodging...</span><br>";
 Head.appendChild(cop10);
+document.getElementById("xcswops").innerHTML += "<span>component 10 Start lodging...</span><br>";
 Head.appendChild(cop11);
+document.getElementById("xcswops").innerHTML += "<span>component 11 Start lodging...</span><br>";

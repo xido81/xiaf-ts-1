@@ -1,5 +1,7 @@
 # xiaf-ts-1
 
+<a href="https://gitee.com/gexido81/ge-xiaf-ts-1">切换Gitee版</a>
+
 # 其它链接
 
 <a href="https://www.baidu.com/">百度</a><br/>
